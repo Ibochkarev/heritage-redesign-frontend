@@ -1,0 +1,30 @@
+.l-section {
+  &__wrapper {
+    overflow: hidden;
+
+    padding: rem(24) 0;
+    @media (min-width: 768px) {
+      padding: rem(40) 0;
+    }
+  }
+
+  &__title {
+    margin: 0 auto rem(16);
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      margin: 0 auto rem(20);
+    }
+
+    @media (min-width: 1024px) {
+      margin: 0 auto rem(40);
+    }
+  }
+
+  &--full &__wrapper {
+    @media (max-width: 1024px) {
+      margin: 0;
+    }
+  }
+}

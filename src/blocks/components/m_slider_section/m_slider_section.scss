@@ -1,0 +1,45 @@
+.m-section-slider {
+  &__wrapper {
+    @media (max-width: 991px) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  &__slide {
+    @media (max-width: 1023px) {
+      width: rem(190) !important;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(40);
+    padding: rem(24) 0;
+    gap: rem(20);
+
+    .swiper-pagination {
+      z-index: 1;
+      position: relative;
+      bottom: 0 !important;
+      left: 0 !important;
+      width: max-content;
+      height: auto !important;
+      margin: 0 !important;
+      transform: none !important;
+    }
+  }
+
+  &__button {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    .ico {
+      width: rem(40);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+extends layouts/default
+
+block variables
+  - const title = "Главная страница проекта"
+
+block content
+  //- include ../blocks/sections/s_intro/s_intro.pug
+
+block scripts
+  script(defer src="/js/vendor.js")
+  script(defer src="/js/main.js")

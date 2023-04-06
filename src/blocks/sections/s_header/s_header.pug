@@ -1,0 +1,47 @@
+-
+  var headerLeftMenu = [
+    { title: 'Каталог', link: '#' },
+    { title: 'О бренде', link: '#' },
+    { title: 'Услуги', link: '#' },
+  ]
+
+header.s-header
+  .s-header-top
+    .l-container
+      .s-header-top__wrapper
+        button.s-header-top__search(type="button" aria-label="Поиск" title="Поиск" style="opacity: 0;")
+          +svgMono("ic-search")
+
+        .s-header__phone--desktop.font-m
+          span Позвонить нам:
+          a(href="tel:+79150001415") +7 915 000 14 15
+
+        a.s-header__phone--mobile(href="tel:+79150001415")
+          +svgMono("ic-phone-outline")
+
+  .s-header-bottom
+    .l-container
+      .s-header-bottom__wrapper
+        .s-header__nav-wrap
+          button.s-header__burger(type="button" aria-label="Меню" title="Меню")
+            +svgMono("ic-menu")
+            +svgMono("ic-close")
+          nav.s-header__navigation
+            each itemMenu in headerLeftMenu
+              button.s-header__navigation-item.s-header__navigation-tab(type="button" aria-label=itemMenu.title title=itemMenu.title)
+                span= itemMenu.title
+            a.s-header__navigation-item(href="/contacts" title="Контакты")
+              span Контакты
+
+        .s-header__logo
+          img.s-header__logo--desktop(src="./img/global/logo-long.svg", alt="")
+          img.s-header__logo--mobile(src="./img/global/logo.svg", alt="")
+        .s-header__actions
+          button.s-header__actions-item.s-header__actions-search(type="button" aria-label="Поиск" title="Поиск" hidden)
+            +svgMono("ic-search")
+          a.s-header__actions-item.s-header__actions-favorite(href="#" aria-label="Избранное" title="Избранное")
+            +svgMono("ic-heart")
+            span 13
+          button.s-header__actions-item.s-header__actions-cart(type="button" aria-label="Корзина" title="Корзина")
+            +svgMono("ic-cart")
+            span 13

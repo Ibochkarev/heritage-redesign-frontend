@@ -1,0 +1,39 @@
+.swiper-pagination {
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(20);
+  margin: rem(16) 0 0;
+
+  @media (min-width: 992px) {
+    margin: rem(24) 0 0;
+  }
+
+  &-bullet {
+    display: block;
+    width: rem(6);
+    height: rem(6);
+    margin: 0 rem(10) !important;
+    background: transparent;
+    border: rem(1) solid var(--color-beige);
+    border-radius: 100%;
+    opacity: 1;
+    transform: none !important;
+    transition: 0.5s all ease;
+    flex: none;
+
+    &:hover {
+      cursor: pointer;
+      background: var(--color-dark-grey);
+      border-color: var(--color-dark-grey);
+    }
+
+    &-active {
+      cursor: default;
+      background: var(--color-dark-grey);
+      border-color: var(--color-dark-grey);
+    }
+  }
+}

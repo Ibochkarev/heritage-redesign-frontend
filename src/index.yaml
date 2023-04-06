@@ -1,0 +1,5 @@
+ProjectTitle: Heritage School
+
+PageList:
+  - file: ui.html
+    ready: 10

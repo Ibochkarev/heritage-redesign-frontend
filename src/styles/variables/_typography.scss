@@ -1,0 +1,115 @@
+.font-h1,
+%font-h1 {
+  font-family: "Prata", sans-serif;
+  font-size: rem(32);
+  font-weight: 400;
+  line-height: rem(36);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(56);
+    line-height: rem(64);
+  }
+}
+
+.font-h2,
+%font-h2 {
+  font-family: "Prata", sans-serif;
+  font-size: rem(22);
+  font-weight: 400;
+  line-height: rem(28);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(32);
+    line-height: rem(40);
+  }
+}
+
+.font-h3,
+%font-h3 {
+  font-family: "Prata", sans-serif;
+  font-size: rem(20);
+  font-weight: 400;
+  line-height: rem(28);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(24);
+    line-height: rem(32);
+  }
+}
+
+.font-xl,
+%font-xl {
+  font-size: rem(18);
+  line-height: rem(24);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(20);
+    line-height: rem(26);
+  }
+}
+
+.font-l,
+%font-l {
+  font-size: rem(14);
+  line-height: rem(18);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(16);
+    line-height: rem(20);
+  }
+}
+
+.font-m,
+%font-m {
+  font-size: rem(12);
+  line-height: rem(18);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(14);
+    line-height: rem(20);
+  }
+}
+
+.font-s,
+%font-s {
+  font-size: rem(10);
+  line-height: rem(14);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(12);
+    line-height: rem(16);
+  }
+}
+
+.font-button,
+%font-button {
+  font-size: rem(12);
+  line-height: rem(16);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(14);
+    line-height: rem(18);
+  }
+}
+
+.font-menu,
+%font-menu {
+  font-size: rem(13);
+  line-height: rem(16);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(14);
+    line-height: rem(18);
+  }
+}
+
+.font-semibold,
+%font-semibold {
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-weight: 600;
+}
+
+.font-regular,
+%font-regular {
+  font-weight: 400;
+}

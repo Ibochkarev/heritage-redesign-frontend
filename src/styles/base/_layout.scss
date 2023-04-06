@@ -1,0 +1,40 @@
+.l {
+  &-container {
+    width: auto;
+    margin: 0 rem(20);
+
+    @media (min-width: 768px) {
+      margin: 0 rem(30);
+    }
+
+    @media (min-width: 1024px) {
+      margin: 0 rem(40);
+    }
+
+    @media (min-width: 1440px) {
+      width: 100%;
+      margin: 0 auto;
+      max-width: rem(1360);
+    }
+  }
+
+  &-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+  }
+}

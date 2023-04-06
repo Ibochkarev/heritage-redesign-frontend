@@ -1,0 +1,15 @@
+mixin button(className, bgColor, typeBtn, text, label)
+  if (typeBtn != 'link')
+    button.a-button(class=(className), class=(bgColor) ? `a-button--${bgColor}` : '', aria-label=label ? label : text, title=label ? label : text)&attributes(attributes)
+      if block
+        block
+
+      if text
+        span.a-button__label.font-button!= text
+  else
+    a.a-button(class=(className), class=(bgColor) ? `a-button--${bgColor}` : '',)&attributes(attributes)
+      if block
+        block
+
+      if text
+        span.a-button__label.font-button!= text

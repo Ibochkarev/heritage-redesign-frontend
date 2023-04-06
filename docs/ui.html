@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UI-Kit</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/Prata/Prata-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="styles/global.css?v=1680809942499">
+  </head>
+  <body>
+    <div class="l-main">
+      <header class="s-header">
+        <div class="s-header-top">
+          <div class="l-container">
+            <div class="s-header-top__wrapper">
+              <button class="s-header-top__search" type="button" aria-label="Поиск" title="Поиск" style="opacity: 0;">
+                <svg class="ico ico-mono-ic-search">
+                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-search"></use>
+                </svg>
+              </button>
+              <div class="s-header__phone--desktop font-m"><span>Позвонить нам:</span><a href="tel:+79150001415">+7 915 000 14 15</a></div><a class="s-header__phone--mobile" href="tel:+79150001415">
+                <svg class="ico ico-mono-ic-phone-outline">
+                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-phone-outline"></use>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="s-header-bottom">
+          <div class="l-container">
+            <div class="s-header-bottom__wrapper">
+              <div class="s-header__nav-wrap">
+                <button class="s-header__burger" type="button" aria-label="Меню" title="Меню">
+                  <svg class="ico ico-mono-ic-menu">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-menu"></use>
+                  </svg>
+                  <svg class="ico ico-mono-ic-close">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-close"></use>
+                  </svg>
+                </button>
+                <nav class="s-header__navigation">
+                  <button class="s-header__navigation-item s-header__navigation-tab" type="button" aria-label="Каталог" title="Каталог"><span>Каталог</span></button>
+                  <button class="s-header__navigation-item s-header__navigation-tab" type="button" aria-label="О бренде" title="О бренде"><span>О бренде</span></button>
+                  <button class="s-header__navigation-item s-header__navigation-tab" type="button" aria-label="Услуги" title="Услуги"><span>Услуги</span></button><a class="s-header__navigation-item" href="/contacts" title="Контакты"><span>Контакты</span></a>
+                </nav>
+              </div>
+              <div class="s-header__logo"><img class="s-header__logo--desktop" src="./img/global/logo-long.svg" alt=""><img class="s-header__logo--mobile" src="./img/global/logo.svg" alt=""></div>
+              <div class="s-header__actions">
+                <button class="s-header__actions-item s-header__actions-search" type="button" aria-label="Поиск" title="Поиск" hidden>
+                  <svg class="ico ico-mono-ic-search">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-search"></use>
+                  </svg>
+                </button><a class="s-header__actions-item s-header__actions-favorite" href="#" aria-label="Избранное" title="Избранное">
+                  <svg class="ico ico-mono-ic-heart">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-heart"></use>
+                  </svg><span>13</span></a>
+                <button class="s-header__actions-item s-header__actions-cart" type="button" aria-label="Корзина" title="Корзина">
+                  <svg class="ico ico-mono-ic-cart">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                  </svg><span>13</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="l-main__content">
+        <section class="l-section s-ui-typography">
+          <div class="l-section__wrapper l-container s-ui-typography__wrapper">
+            <h2 class="l-section__title font-h2">Типографика</h2>
+            <h1 class="font-h1">Заголовок баннеров h1</h1>
+          </div>
+        </section>
+        <section class="l-section s-ui-buttons">
+          <div class="l-section__wrapper l-container s-ui-buttons__wrapper">
+            <h2 class="l-section__title font-h2">Кнопки</h2>
+            <button class="a-button a-button-test a-button--black" aria-label="ic-cart" title="ic-cart"><span class="a-button__label font-button">Добавить в корзину</span>
+            </button><br>
+            <button class="a-button a-button-test a-button--light-grey" aria-label="Консультация стилиста" title="Консультация стилиста"><span class="a-button__label font-button">Консультация стилиста</span>
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer class="s-footer">
+        <div class="l-wide">
+          <div class="footer__wrapper"></div>
+        </div>
+      </footer>
+    </div>
+    <script defer src="js/vendor.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
