@@ -7,16 +7,15 @@
   height: rem(40);
   min-width: rem(40);
   padding: 0 rem(10);
+  text-transform: uppercase;
   border: 0;
-  gap: rem(4);
   flex-direction: row;
   transition-duration: 0.4s;
 
   @media (min-width: 1024px) {
-    height: rem(50);
+    height: rem(52);
     min-width: rem(50);
     padding: 0 rem(14);
-    gap: rem(7);
   }
 
   &__label {
@@ -31,11 +30,15 @@
     }
   }
 
-  &--black {
-    background-color: var(--color-black);
+  &--default {
+    background-color: var(--color-dark-gold);
 
     &:hover {
-      background-color: var(--color-dark-grey);
+      box-shadow: 0 rem(1) rem(5) hsla(0, 0%, 0%, 0.2), 0 rem(3) rem(4) hsla(0, 0%, 0%, 0.12), 0 rem(2) rem(4) hsla(0, 0%, 0%, 0.14);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 rem(20) rgba(0, 0, 0, 0.1);
     }
 
     &:disabled {
@@ -44,46 +47,6 @@
 
     .ico {
       fill: var(--color-white);
-    }
-  }
-
-  &--light-grey {
-    background-color: var(--color-middle-grey);
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:disabled {
-      background-color: var(--color-disabled-grey);
-    }
-
-    .a-button__label {
-      color: var(--color-black);
-    }
-
-    &__icon svg {
-      fill: var(--color-black);
-    }
-  }
-
-  &--white {
-    background-color: var(--color-white);
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:disabled {
-      background-color: var(--color-disabled-grey);
-    }
-
-    .a-button__label {
-      color: var(--color-black);
-    }
-
-    &__icon svg {
-      fill: var(--color-black);
     }
   }
 }
