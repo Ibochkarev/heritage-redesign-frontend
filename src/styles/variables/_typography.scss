@@ -1,35 +1,118 @@
-.font-h1,
-%font-h1 {
-  font-family: "Prata", sans-serif;
-  font-size: rem(32);
-  font-weight: 400;
-  line-height: rem(36);
+.font-h1 {
+  font-family: 'Lora';
+  font-size: rem(24);
+  font-weight: 500;
+  line-height: rem(24);
 
   @media screen and (min-width: 1024px) {
-    font-size: rem(56);
-    line-height: rem(64);
+    font-size: rem(76);
+    font-weight: 400;
+    line-height: rem(88);
   }
 }
 
-.font-h2,
-%font-h2 {
-  font-family: "Prata", sans-serif;
-  font-size: rem(22);
-  font-weight: 400;
-  line-height: rem(28);
+@mixin font-h1 {
+  font-family: 'Lora';
+  font-size: rem(24);
+  font-weight: 500;
+  line-height: rem(24);
 
   @media screen and (min-width: 1024px) {
-    font-size: rem(32);
+    font-size: rem(76);
+    font-weight: 400;
+    line-height: rem(88);
+  }
+}
+
+.font-h2 {
+  font-family: 'Lora';
+  font-size: rem(22);
+  font-weight: 500;
+  line-height: rem(24);
+
+  @media screen and (min-width: 1024px) {
+  font-family: 'Lora';
+    font-size: rem(48);
+    line-height: rem(56);
+  }
+}
+
+@mixin font-h2 {
+  font-family: 'Lora';
+  font-size: rem(22);
+  font-weight: 500;
+  line-height: rem(24);
+
+  @media screen and (min-width: 1024px) {
+  font-family: 'Lora';
+    font-size: rem(48);
+    line-height: rem(56);
+  }
+}
+
+.font-h3 {
+  font-family: 'Lora';
+  font-size: rem(20);
+  font-weight: 500;
+  line-height: rem(24);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(42);
+    line-height: rem(52);
+  }
+}
+
+@mixin font-h3 {
+  font-family: 'Lora';
+  font-size: rem(20);
+  font-weight: 500;
+  line-height: rem(24);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(42);
+    line-height: rem(52);
+  }
+}
+
+.font-h4 {
+  font-family: 'Lora';
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: rem(22);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(40);
+    font-weight: 400;
+    line-height: rem(48);
+  }
+}
+
+@mixin font-h4 {
+  font-family: 'Lora';
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: rem(22);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(40);
+    font-weight: 400;
+    line-height: rem(48);
+  }
+}
+
+.font-xl {
+  font-size: rem(16);
+  line-height: rem(20);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(30);
     line-height: rem(40);
   }
 }
 
-.font-h3,
-%font-h3 {
-  font-family: "Prata", sans-serif;
-  font-size: rem(20);
-  font-weight: 400;
-  line-height: rem(28);
+.font-l {
+  font-size: rem(14);
+  line-height: rem(18);
 
   @media screen and (min-width: 1024px) {
     font-size: rem(24);
@@ -37,21 +120,39 @@
   }
 }
 
-.font-xl,
-%font-xl {
-  font-size: rem(18);
-  line-height: rem(24);
+.font-m {
+  font-size: rem(12);
+  line-height: rem(16);
 
   @media screen and (min-width: 1024px) {
     font-size: rem(20);
-    line-height: rem(26);
+    line-height: rem(28);
   }
 }
 
-.font-l,
-%font-l {
+.font-s {
+  font-size: rem(10);
+  line-height: rem(14);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(16);
+    line-height: rem(22);
+  }
+}
+
+.font-xs {
   font-size: rem(14);
-  line-height: rem(18);
+  line-height: rem(20);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(14);
+    line-height: rem(20);
+  }
+}
+
+.font-button {
+  font-size: rem(12);
+  line-height: rem(14);
 
   @media screen and (min-width: 1024px) {
     font-size: rem(16);
@@ -59,57 +160,32 @@
   }
 }
 
-.font-m,
-%font-m {
-  font-size: rem(12);
-  line-height: rem(18);
-
-  @media screen and (min-width: 1024px) {
-    font-size: rem(14);
-    line-height: rem(20);
-  }
-}
-
-.font-s,
-%font-s {
-  font-size: rem(10);
-  line-height: rem(14);
-
-  @media screen and (min-width: 1024px) {
-    font-size: rem(12);
-    line-height: rem(16);
-  }
-}
-
-.font-button,
-%font-button {
+.font-menu {
   font-size: rem(12);
   line-height: rem(16);
 
   @media screen and (min-width: 1024px) {
-    font-size: rem(14);
-    line-height: rem(18);
+    font-size: rem(16);
+    line-height: rem(22);
   }
 }
 
-.font-menu,
-%font-menu {
-  font-size: rem(13);
-  line-height: rem(16);
-
-  @media screen and (min-width: 1024px) {
-    font-size: rem(14);
-    line-height: rem(18);
-  }
+.font-bold{
+  font-weight: 700;
 }
 
-.font-semibold,
-%font-semibold {
-  font-family: "Proxima Nova Lt", sans-serif;
+.font-semibold{
   font-weight: 600;
 }
 
-.font-regular,
-%font-regular {
+.font-medium {
+  font-weight: 500;
+}
+
+.font-regular {
   font-weight: 400;
+}
+
+.font-light {
+  font-weight: 300;
 }
