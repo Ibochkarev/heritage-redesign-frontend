@@ -1,9 +1,11 @@
 // миксин для создания масштабируемых элементов, чтобы поддерживать соотношение. @include responsive-ratio(16,9)
 @mixin responsive-ratio($x, $y, $pseudo: false) {
-  $padding: unquote(($y / $x) * 100 + "%");
+  $padding: ($y / $x) * 100 + '%';
+
   @if $pseudo {
-    &:before {
+    &::before {
       @include pseudo($pos: relative);
+
       width: 100%;
       padding-top: $padding;
     }
@@ -13,19 +15,16 @@
 }
 
 //css треугольники
-@mixin css-triangle(
-  $color,
-  $direction,
-  $size: 6px,
-  $position: absolute,
-  $round: false
-) {
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false) {
   @include pseudo($pos: $position);
+
   width: 0;
   height: 0;
+
   @if $round {
     border-radius: 3px;
   }
+
   @if $direction == down {
     border-left: $size solid transparent;
     border-right: $size solid transparent;
@@ -54,25 +53,23 @@
   $declarations: ();
 
   @each $declaration in $properties {
-      $duration: .4s;
-      $delay: false;
-      $timing-function: ease;
-      $property: all;
+    $duration: 0.4s;
+    $delay: false;
+    $timing-function: ease;
+    $property: all;
 
-      @if type-of($declaration) == 'map' {
-          $duration: if(map_get($declaration, 'duration'), #{map_get($declaration, 'duration')}, $duration);
-          $delay: if(map_get($declaration, 'delay'), #{map_get($declaration, 'delay')}, $delay);
-          $timing-function: if(map_get($declaration, 'timing-function'), #{map_get($declaration, 'timing-function')}, $timing-function);
-          $property: if(map_get($declaration, 'property'), #{map_get($declaration, 'property')}, $property);
-      } @else {
-          $property: $declaration;
-      }
-      
-      $delayValue: if($delay, ' ' + $delay, '');
-      $declarations: append($declarations, #{$property + ' ' + $duration + $delayValue + ' ' + $timing-function}, comma);
+    @if type-of($declaration) == 'map' {
+      $duration: if(map_get($declaration, 'duration'), #{map_get($declaration, 'duration')}, $duration);
+      $delay: if(map_get($declaration, 'delay'), #{map_get($declaration, 'delay')}, $delay);
+      $timing-function: if(map_get($declaration, 'timing-function'), #{map_get($declaration, 'timing-function')}, $timing-function);
+      $property: if(map_get($declaration, 'property'), #{map_get($declaration, 'property')}, $property);
+    } @else {
+      $property: $declaration;
+    }
+
+    $delayValue: if($delay, ' ' + $delay, '');
+    $declarations: append($declarations, #{$property + ' ' + $duration + $delayValue + ' ' + $timing-function}, comma);
   }
 
   transition: $declarations;
 }
-
-

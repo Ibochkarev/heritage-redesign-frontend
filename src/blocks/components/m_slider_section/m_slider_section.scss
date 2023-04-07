@@ -5,6 +5,7 @@
       margin-left: 0;
     }
   }
+
   &__slide {
     @media (max-width: 1023px) {
       width: rem(190) !important;
@@ -13,17 +14,17 @@
 
   &__controls {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-top: rem(40);
     padding: rem(24) 0;
     gap: rem(20);
 
     .swiper-pagination {
-      z-index: 1;
       position: relative;
-      bottom: 0 !important;
+      z-index: 1;
       left: 0 !important;
+      bottom: 0 !important;
       width: max-content;
       height: auto !important;
       margin: 0 !important;
@@ -32,10 +33,10 @@
   }
 
   &__button {
-    z-index: 1;
-    cursor: pointer;
     position: relative;
+    z-index: 1;
     display: grid;
+    cursor: pointer;
     place-items: center;
 
     .ico {

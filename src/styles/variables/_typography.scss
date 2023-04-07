@@ -1,5 +1,5 @@
 .font-h1 {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(24);
   font-weight: 500;
   line-height: rem(24);
@@ -12,7 +12,7 @@
 }
 
 @mixin font-h1 {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(24);
   font-weight: 500;
   line-height: rem(24);
@@ -25,33 +25,33 @@
 }
 
 .font-h2 {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(22);
   font-weight: 500;
   line-height: rem(24);
 
   @media screen and (min-width: 1024px) {
-  font-family: 'Lora';
+    font-family: Lora;
     font-size: rem(48);
     line-height: rem(56);
   }
 }
 
 @mixin font-h2 {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(22);
   font-weight: 500;
   line-height: rem(24);
 
   @media screen and (min-width: 1024px) {
-    font-family: 'Lora';
+    font-family: Lora;
     font-size: rem(48);
     line-height: rem(56);
   }
 }
 
 .font-h3 {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(20);
   font-weight: 500;
   line-height: rem(24);
@@ -63,7 +63,7 @@
 }
 
 @mixin font-h3 {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(20);
   font-weight: 500;
   line-height: rem(24);
@@ -75,7 +75,7 @@
 }
 
 .font-h4 {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(18);
   font-weight: 500;
   line-height: rem(22);
@@ -88,7 +88,7 @@
 }
 
 @mixin font-h4 {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(18);
   font-weight: 500;
   line-height: rem(22);
@@ -101,7 +101,7 @@
 }
 
 .font-xl {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(16);
   line-height: rem(20);
 
@@ -112,7 +112,7 @@
 }
 
 @mixin font-xl {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(16);
   line-height: rem(20);
 
@@ -223,7 +223,7 @@
 }
 
 .font-menu {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(12);
   line-height: rem(16);
 
@@ -234,7 +234,7 @@
 }
 
 @mixin font-menu {
-  font-family: 'Lora';
+  font-family: Lora;
   font-size: rem(12);
   line-height: rem(16);
 

@@ -1,8 +1,8 @@
 .l-section {
   &__wrapper {
     overflow: hidden;
-
     padding: rem(24) 0;
+
     @media (min-width: 768px) {
       padding: rem(40) 0;
     }
