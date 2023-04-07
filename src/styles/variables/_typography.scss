@@ -44,7 +44,7 @@
   line-height: rem(24);
 
   @media screen and (min-width: 1024px) {
-  font-family: 'Lora';
+    font-family: 'Lora';
     font-size: rem(48);
     line-height: rem(56);
   }
@@ -101,6 +101,18 @@
 }
 
 .font-xl {
+  font-family: 'Lora';
+  font-size: rem(16);
+  line-height: rem(20);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(30);
+    line-height: rem(40);
+  }
+}
+
+@mixin font-xl {
+  font-family: 'Lora';
   font-size: rem(16);
   line-height: rem(20);
 
@@ -120,7 +132,27 @@
   }
 }
 
+@mixin font-l {
+  font-size: rem(14);
+  line-height: rem(18);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(24);
+    line-height: rem(32);
+  }
+}
+
 .font-m {
+  font-size: rem(12);
+  line-height: rem(16);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(20);
+    line-height: rem(28);
+  }
+}
+
+@mixin font-m {
   font-size: rem(12);
   line-height: rem(16);
 
@@ -140,7 +172,27 @@
   }
 }
 
+@mixin font-s {
+  font-size: rem(10);
+  line-height: rem(14);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(16);
+    line-height: rem(22);
+  }
+}
+
 .font-xs {
+  font-size: rem(14);
+  line-height: rem(20);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(14);
+    line-height: rem(20);
+  }
+}
+
+@mixin font-xs {
   font-size: rem(14);
   line-height: rem(20);
 
@@ -160,7 +212,18 @@
   }
 }
 
+@mixin font-button {
+  font-size: rem(12);
+  line-height: rem(14);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(16);
+    line-height: rem(20);
+  }
+}
+
 .font-menu {
+  font-family: 'Lora';
   font-size: rem(12);
   line-height: rem(16);
 
@@ -170,11 +233,22 @@
   }
 }
 
-.font-bold{
+@mixin font-menu {
+  font-family: 'Lora';
+  font-size: rem(12);
+  line-height: rem(16);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem(16);
+    line-height: rem(22);
+  }
+}
+
+.font-bold {
   font-weight: 700;
 }
 
-.font-semibold{
+.font-semibold {
   font-weight: 600;
 }
 

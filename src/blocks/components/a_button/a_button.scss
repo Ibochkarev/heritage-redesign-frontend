@@ -1,52 +1,51 @@
 .a-button {
-  cursor: pointer;
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: rem(40);
-  min-width: rem(40);
-  padding: 0 rem(10);
-  text-transform: uppercase;
-  border: 0;
-  flex-direction: row;
-  transition-duration: 0.4s;
-
-  @media (min-width: 1024px) {
-    height: rem(52);
-    min-width: rem(50);
-    padding: 0 rem(14);
-  }
-
-  &__label {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: rem(40);
+    height: rem(40);
+    border: 0;
+    padding: 0 rem(10);
+    cursor: pointer;
     text-transform: uppercase;
-    color: var(--color-light-grey);
-  }
+    transition-duration: 0.4s;
 
-  &:disabled {
-    &__label,
-    &__icon svg {
-      opacity: 0.3;
-    }
-  }
-
-  &--default {
-    background-color: var(--color-dark-gold);
-
-    &:hover {
-      box-shadow: 0 rem(1) rem(5) hsla(0, 0%, 0%, 0.2), 0 rem(3) rem(4) hsla(0, 0%, 0%, 0.12), 0 rem(2) rem(4) hsla(0, 0%, 0%, 0.14);
-    }
-
-    &:active {
-      box-shadow: inset 0 0 rem(20) rgba(0, 0, 0, 0.1);
+    @media (min-width: 1024px) {
+        min-width: rem(50);
+        height: rem(52);
+        padding: 0 rem(14);
     }
 
     &:disabled {
-      background-color: var(--color-disabled-grey);
+        &__label, &__icon svg {
+            opacity: 0.3;
+        }
     }
 
-    .ico {
-      fill: var(--color-white);
+    &__label {
+        text-transform: uppercase;
+        color: var(--color-light-grey);
     }
-  }
+
+    &--default {
+        background-color: var(--color-dark-gold);
+
+        &:hover {
+            box-shadow: 0 rem(1) rem(5) hsla(0, 0%, 0%, 0.2), 0 rem(3) rem(4) hsla(0, 0%, 0%, 0.12), 0 rem(2) rem(4) hsla(0, 0%, 0%, 0.14);
+        }
+
+        &:active {
+            box-shadow: inset 0 0 rem(20) rgba(0, 0, 0, 0.1);
+        }
+
+        &:disabled {
+            background-color: var(--color-disabled-grey);
+        }
+
+        .ico {
+            fill: var(--color-white);
+        }
+    }
 }

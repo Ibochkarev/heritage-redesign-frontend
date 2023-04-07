@@ -1,4 +1,88 @@
+-
+  var menuFooterAbout = [
+    {title: 'Приветствие основателя', href: '#'},
+    {title: 'Наше видение', href: '#'},
+    {title: 'Наши ценности', href: '#'},
+    {title: 'Сведения об образовательной организации', href: '#'},
+    {title: 'Карьера в Heritage', href: '#'},
+    {title: 'Тренинги для родителей', href: '#'},
+  ]
+  var menuFooterPrograms = [
+    {title: 'Международная программа', href: '#'},
+    {title: 'Российская программа', href: '#'},
+    {title: 'Детский сад', href: '#'},
+    {title: 'Начальная школа', href: '#'},
+    {title: 'Средняя школа', href: '#'},
+    {title: 'Смешанное обучение', href: '#'},
+    {title: 'Спортивное образование', href: '#'},
+    {title: 'Кембриджская аккредитация', href: '#'},
+    {title: 'Экзамены', href: '#'},
+  ]
+  var menuFooterParent = [
+    {title: 'Ценностное образование', href: '#'},
+    {title: 'Система Домов', href: '#'},
+    {title: 'Мышление роста', href: '#'},
+    {title: 'Безопасная среда', href: '#'},
+    {title: 'Дополнительная программа', href: '#'},
+    {title: 'Студенческое самоуправление', href: '#'},
+  ]
+  var menuFooterСampus = [
+    {title: 'Кампус Сокольники', href: '#'},
+    {title: 'Кампус Ленинский', href: '#'},
+    {title: 'Кампус Тюмень', href: '#'},
+    {title: 'La Berёzka', href: '#'},
+  ]
+  var menuFooterAdmission = [
+    {title: 'Стоимость', href: '#'},
+    {title: 'День открытых дверей (Тюмень)', href: '#'},
+    {title: 'День открытых дверей (Сокольники)', href: '#'},
+    {title: 'Блог', href: '#', bold: true},
+    {title: 'Контакты', href: '#', bold: true},
+  ]
 
 footer.s-footer
-  .l-wide
-    .footer__wrapper
+  .l-container
+    .s-footer__wrapper
+      .s-footer__content
+        .s-footer__column
+          a.s-footer__title(href="") О школе
+          ul.s-footer__menu
+            each item in menuFooterAbout
+              li.s-footer__menu-item
+                a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
+        .s-footer__column
+          a.s-footer__title(href="") Программы
+          ul.s-footer__menu
+            each item in menuFooterPrograms
+              li.s-footer__menu-item
+                a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
+        .s-footer__column
+          a.s-footer__title(href="") Родителям
+          ul.s-footer__menu
+            each item in menuFooterPrograms
+              li.s-footer__menu-item
+                a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
+        .s-footer__column
+          a.s-footer__title(href="") Кампусы
+          ul.s-footer__menu
+            each item in menuFooterСampus
+              li.s-footer__menu-item
+                a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
+        .s-footer__column
+          a.s-footer__title(href="") Поступление
+          ul.s-footer__menu
+            each item in menuFooterAdmission
+              if item.bold === true
+                li.s-footer__menu-item
+                  a.s-footer__menu-link.font-menu.is-uppercase(href= item.href)= item.title
+              else
+                li.s-footer__menu-item
+                  a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
+        .s-footer__column.s-footer__column--contacts
+          a.s-footer__phone.font-xl(href="+tel:88005551979") 8 (800) 555-19-79
+          .s-footer__logo
+            img(src="/img/global/logo.svg", alt="")
+      .s-footer__bottom.font-s.font-light
+        .s-footer__bottom-col © 2020-2023 Heritage International School
+        .s-footer__bottom-col
+          a(href="") Политика защиты персональных данных
