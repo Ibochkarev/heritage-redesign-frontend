@@ -1,14 +1,10 @@
-extends ../layouts/default
-include ../helpers/_mixins-default
-include ../helpers/_mixins-custom
+extends  ../layouts/default
 
 block variables
-  - const title = "Страница 404 ошибки"
+  - const title = "404"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_error.css")
 
 block content
-  include ../../blocks/sections/s_header/s_header.pug
-  include ../../blocks/sections/s_footer/s_footer.pug
-
-block scripts
-  script(defer src="./js/vendor.js")
-  script(defer src="./js/main.js")
+  include ../../blocks/sections/_error/s_page_error/s_page_error.pug

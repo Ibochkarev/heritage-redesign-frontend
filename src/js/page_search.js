@@ -1,1 +1,1 @@
-import '%sections%/_seacrh/s_search_page'
+import '%sections%/_seacrh/s_page_search/s_page_search'

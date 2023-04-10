@@ -4,4 +4,6 @@ PageList:
   - file: ui.html
     ready: 20
   - file: search.html
-    ready: 10
+    ready: 100
+  - file: 404.html
+    ready: 100

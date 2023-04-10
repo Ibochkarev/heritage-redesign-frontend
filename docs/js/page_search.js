@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/blocks/sections/_seacrh/s_search_page.js":
-/*!******************************************************!*\
-  !*** ./src/blocks/sections/_seacrh/s_search_page.js ***!
-  \******************************************************/
+/***/ "./src/blocks/sections/_seacrh/s_page_search/s_page_search.js":
+/*!********************************************************************!*\
+  !*** ./src/blocks/sections/_seacrh/s_page_search/s_page_search.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var inputSearchForm = document.querySelector(\".s-page-search__form-input\"),\n    searchFormClearButton = document.querySelector(\".s-page-search__form-clear\");\n\n  // 'keyup' event - runs when a character has been typed\n  inputSearchForm.addEventListener(\"keyup\", function () {\n    searchFormClearButton.classList.add(\"is-show\");\n  });\n\n  // Handle clear button actions\n  searchFormClearButton.addEventListener(\"click\", function () {\n    inputSearchForm.value = \"\"; // empty input\n    searchFormClearButton.classList.remove(\"is-show\"); // hides clear button\n    inputSearchForm.focus(); // re-focus on input\n  });\n\n  // Automatically focus on input after page loads\n  inputSearchForm.focus();\n});\n\n//# sourceURL=webpack:///./src/blocks/sections/_seacrh/s_search_page.js?");
+eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var inputSearchForm = document.querySelector(\".s-page-search__form-input\"),\n    searchFormClearButton = document.querySelector(\".s-page-search__form-clear\");\n\n  // 'keyup' event - runs when a character has been typed\n  inputSearchForm.addEventListener(\"keyup\", function () {\n    searchFormClearButton.classList.add(\"is-show\");\n  });\n\n  // Handle clear button actions\n  searchFormClearButton.addEventListener(\"click\", function () {\n    inputSearchForm.value = \"\"; // empty input\n    searchFormClearButton.classList.remove(\"is-show\"); // hides clear button\n    inputSearchForm.focus(); // re-focus on input\n  });\n\n  // Automatically focus on input after page loads\n  inputSearchForm.focus();\n});\n\n//# sourceURL=webpack:///./src/blocks/sections/_seacrh/s_page_search/s_page_search.js?");
 
 /***/ }),
 
@@ -105,7 +105,7 @@ eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var input
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_seacrh_s_search_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_seacrh/s_search_page */ \"./src/blocks/sections/_seacrh/s_search_page.js\");\n/* harmony import */ var _sections_seacrh_s_search_page__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sections_seacrh_s_search_page__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/js/page_search.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_seacrh_s_page_search_s_page_search__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_seacrh/s_page_search/s_page_search */ \"./src/blocks/sections/_seacrh/s_page_search/s_page_search.js\");\n/* harmony import */ var _sections_seacrh_s_page_search_s_page_search__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sections_seacrh_s_page_search_s_page_search__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/js/page_search.js?");
 
 /***/ })
 

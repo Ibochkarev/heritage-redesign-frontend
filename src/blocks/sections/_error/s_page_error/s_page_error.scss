@@ -1,0 +1,38 @@
+.s-page-error {
+  &__wrapper {
+    max-width: rem(1180);
+  }
+
+  &__content {
+    margin-bottom: rem(32);
+    font-weight: 300;
+    color: var(--color-black);
+    @include font-l;
+
+    @media (min-width: 1440px) {
+      margin-bottom: rem(60);
+    }
+
+    p {
+      margin-bottom: rem(12);
+
+      @media (min-width: 1440px) {
+        margin-bottom: rem(24);
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      color: var(--color-dark-blue);
+    }
+  }
+
+  &__button {
+    padding-right: rem(28);
+    padding-left: rem(28);
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
