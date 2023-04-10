@@ -1,0 +1,44 @@
+.m-breadcrumbs {
+  margin-bottom: rem(24);
+
+  @media (min-width: 1440px) {
+    margin-bottom: rem(80);
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+
+    &:not(:last-child):after {
+      margin-right: rem(4);
+      margin-left: rem(4);
+      color: var(--color-black);
+      content: "/";
+    }
+
+    &:not(:last-child):hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    font-weight: 300;
+    color: var(--color-black);
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__link-current {
+    color: var(--color-black);
+    font-weight: 300;
+  }
+
+  &__list {
+    padding: 0;
+    list-style-type: none;
+  }
+}

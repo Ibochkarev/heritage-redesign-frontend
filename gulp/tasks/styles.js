@@ -25,10 +25,14 @@ gulp.task("styles", () => {
     .pipe(plumber())
     .pipe(sass())
     .pipe(groupmedia())
-    .pipe(gulpif(!isDevelopment || production, autoprefixer({
+    // .pipe(gulpif(!isDevelopment || production, autoprefixer({
+    //   cascade: false,
+    //   grid: true
+    // })))
+    .pipe(autoprefixer({
       cascade: false,
       grid: true
-    })))
+    }))
     .pipe(gulpif(!isDevelopment || production, mincss({
       compatibility: "ie8",
       level: {

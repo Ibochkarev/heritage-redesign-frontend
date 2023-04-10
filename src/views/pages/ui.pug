@@ -43,11 +43,10 @@ block content
     .font-menu Текст menu
     br
 
+    +m_breadcrumbs(['Main page', 'News'], 'News detail')
+    br
+
   +section('s-ui-buttons', 'Кнопки')
     +button('a-button-test', 'black', 'button', 'Добавить в корзину', 'ic-cart')
     br
     +button('a-button-test', 'light-grey', 'button', 'Консультация стилиста')
-
-block scripts
-  script(defer src="js/vendor.js")
-  script(defer src="js/main.js")

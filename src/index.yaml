@@ -2,4 +2,6 @@ ProjectTitle: Heritage School
 
 PageList:
   - file: ui.html
+    ready: 20
+  - file: search.html
     ready: 10

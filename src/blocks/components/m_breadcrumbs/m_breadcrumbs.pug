@@ -1,0 +1,24 @@
+mixin m_breadcrumbs(items, last)
+  .m-breadcrumbs
+    .l-wide
+      ul.m-breadcrumbs__list(itemscope, itemtype="https://schema.org/BreadcrumbList")&attributes(attributes)
+        each item, index in items
+          li.m-breadcrumbs__item(itemscope, itemprop="itemListElement", itemtype="https://schema.org/ListItem")
+            if (items.length === 1)
+              span.m-breadcrumbs__link.font-l(itemprop="name")= item
+              meta(itemprop="position" content=index)
+              meta(itemprop="item" content="#")
+            else
+              a(href="#", temprop="item", title=item).m-breadcrumbs__link.font-l
+                meta(itemprop="position" content=index)
+                span(itemprop="name")= item
+
+        if last
+          li.m-breadcrumbs__item
+            span.m-breadcrumbs__link-current.font-l(itemprop="name")= last
+            meta(itemprop="item" content="#")
+            meta(itemprop="position" content="")
+        else
+
+//- +m_breadcrumbs(['Main page', 'News'], 'News detail')
+//- +m_breadcrumbs(['Main page'])

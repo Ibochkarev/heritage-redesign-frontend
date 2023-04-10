@@ -1,0 +1,33 @@
+-
+  var resultsSeacrh = [
+    {
+      title: '5-балльная или 10-балльная система оценок в школе',
+      text: 'Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Одна рукописи которой алфавит напоивший повстречался меня, бросил сих великий эта маленькая послушавшись его за это продолжил? Там, дороге то?'
+    },
+    {
+      title: 'Система Монтессори – что это такое. Плюсы и минусы методики.',
+      text: 'Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Одна рукописи которой алфавит напоивший повстречался меня, бросил сих великий эта маленькая послушавшись его за это продолжил? Там, дороге то?'
+    },
+    {
+      title: 'Система образования в Великобритании',
+      text: 'Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Одна рукописи которой алфавит напоивший повстречался меня, бросил сих великий эта маленькая послушавшись его за это продолжил? Там, дороге то?'
+    }
+  ]
+
+section.s-page-search.s-page
+  .l-container
+    .s-page-search__wrapper
+      +m_breadcrumbs(['Главная'], 'Поиск')
+      h1.s-page__title.font-h2 Поиск
+      form.s-page-search__form(action="")
+        label.s-page-search__form-label
+          input.s-page-search__form-input.font-l(type="text" name="query" placeholder="Введите запрос")
+          button.s-page-search__form-clear.font-l(type="reset" title="Очистить" aria-label="Очистить") Очистить
+        button.s-page-search__form-button(type="submit" title="Поиск" aria-label="Поиск")
+          +svgMono("ic-search")
+
+      .s-page-search__not-found.font-l.font-medium Подходящих результатов не найдено.
+
+      .s-page-search__results
+        each item in resultsSeacrh
+          +m_search_card(item.title, item.text)

@@ -1,0 +1,126 @@
+.s-page-search {
+  &__wrapper {
+    max-width: rem(1180);
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(24);
+
+    @media (min-width: 1024px) {
+      margin-top: rem(40);
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: rem(80);
+    }
+
+    &-label {
+      position: relative;
+      width: 100%;
+    }
+
+    &-input {
+      overflow: hidden;
+      width: calc(100% - 40px);
+      height: rem(40);
+      padding-right: rem(24);
+      padding-left: rem(24);
+      border: 0;
+      background-color: var(--color-white);
+      outline: none;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      @media (min-width: 1024px) {
+        width: 100%;
+        height: rem(72);
+        padding-right: rem(32);
+        padding-left: rem(32);
+      }
+    }
+
+    &-clear {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: rem(24);
+      display: none;
+      color: var(--color-red);
+      background: none;
+      border: none;
+      transform: translateY(-50%);
+      transition: all .2s ease-in-out;
+      outline: none;
+
+      @media (min-width: 1024px) {
+        right: rem(32);
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.is-show {
+        display: block;
+        opacity: 1;
+      }
+    }
+
+    &-button {
+      cursor:pointer;
+      position: relative;
+      display: grid;
+      width: rem(40);
+      height: rem(40);
+      padding: 0;
+      border: 0;
+      transition-duration: 0.4s;
+      flex: none;
+      background-color: var(--color-dark-gold);
+      place-items: center;
+
+      @media (min-width: 1024px) {
+        width: rem(72);
+        height: rem(72);
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      .ico {
+        font-size: rem(20);
+        fill: var(--color-white);
+
+        @media (min-width: 1024px) {
+          font-size: rem(32);
+        }
+      }
+    }
+  }
+
+  &__not-found {
+    padding: rem(16);
+    color: var(--color-dark-blue);
+
+    @media(min-width: 1024px){
+      padding: rem(24);
+    }
+  }
+
+  &__results {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: rem(12);
+
+    @media(min-width: 768px){
+      gap: rem(24);
+    }
+
+    @media(min-width: 1440px){
+      gap: rem(40);
+    }
+  }
+}

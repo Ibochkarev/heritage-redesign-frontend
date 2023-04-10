@@ -2,30 +2,31 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   plugins: [
     new webpack.ProvidePlugin({
-      jQuery: "jquery",
-      "window.jQuery": "jquery",
-      jquery: "jquery",
-      "window.jquery": "jquery",
-      $: "jquery",
-      "window.$": "jquery",
+      'jQuery': 'jquery',
+      'window.jQuery': 'jquery',
+      'jquery': 'jquery',
+      'window.jquery': 'jquery',
+      '$': 'jquery',
+      'window.$': 'jquery',
     }),
   ],
   node: {
-    fs: "empty",
-    tls: "empty",
-    net: "empty",
+    fs: 'empty',
+    tls: 'empty',
+    net: 'empty',
   },
   entry: {
-    main: "./src/js/index.js",
+    main: './src/js/index.js',
+    page_search: './src/js/page_search.js',
   },
 
   output: {
-    filename: "[name].js",
-    chunkFilename: "[name].js",
-    publicPath: "/",
+    filename: '[name].js',
+    chunkFilename: '[name].js',
+    publicPath: '/',
   },
 
   optimization: {
@@ -33,8 +34,8 @@ module.exports = {
       cacheGroups: {
         vendor: {
           test: /node_modules/,
-          chunks: "initial",
-          name: "vendor",
+          chunks: 'initial',
+          name: 'vendor',
           enforce: true,
         },
       },
@@ -47,9 +48,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           query: {
-            presets: [["@babel/preset-env", { modules: false }]],
+            presets: [['@babel/preset-env', { modules: false }]],
           },
         },
       },
@@ -58,8 +59,8 @@ module.exports = {
 
   resolve: {
     alias: {
-      "%sections%": path.resolve(__dirname, "src/blocks/sections"),
-      "%components%": path.resolve(__dirname, "src/blocks/components"),
+      '%sections%': path.resolve(__dirname, 'src/blocks/sections'),
+      '%components%': path.resolve(__dirname, 'src/blocks/components'),
     },
   },
-};
+}

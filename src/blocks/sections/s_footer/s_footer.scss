@@ -10,7 +10,7 @@
   &__content {
     display: grid;
     margin-bottom: rem(40);
-    grid-gap: rem(32);
+    gap: rem(32);
     grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
 
     @media (min-width: 1024px) {
@@ -25,7 +25,7 @@
     @media (min-width: 1600px) {
       display: flex;
       justify-content: space-between;
-      grid-gap: rem(32);
+      gap: rem(32);
     }
   }
 

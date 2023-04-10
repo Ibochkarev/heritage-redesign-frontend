@@ -362,7 +362,7 @@
       display: grid;
       align-items: center;
       height: rem(40);
-      grid-gap: rem(20);
+      gap: rem(20);
       grid-template-columns: repeat(2, 1fr);
 
       @media (min-width: 1024px) {
