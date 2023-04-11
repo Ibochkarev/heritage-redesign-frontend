@@ -1351,6 +1351,7 @@ section {
 
 .l-container {
   width: auto;
+  max-width: 101.25rem;
   margin: 0 1.25rem;
 }
 
@@ -1365,30 +1366,30 @@ section {
 }
 
 .l-wrapper {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .l-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100vh;
+  min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
-  min-height: 100vh;
 }
 
 .icon-logo {
@@ -2293,7 +2294,6 @@ section {
 @media (min-width: 1920px) {
   .l-container {
     width: 100%;
-    max-width: 101.25rem;
     margin: 0 auto;
   }
 }
