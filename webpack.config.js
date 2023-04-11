@@ -21,6 +21,7 @@ module.exports = {
   entry: {
     main: './src/js/index.js',
     page_search: './src/js/page_search.js',
+    page_covid: './src/js/page_covid.js',
   },
 
   output: {

@@ -1,8 +1,8 @@
 mixin m_tabs(dataTabs=dataTabs)
   .m-tabs
     each tab in dataTabs
-      .m-tabs__item.font-m
-        .m-tabs__item-header.font-semibold
-          .m-tabs__item-title!= tab.title
+      .m-tabs__item
+        .m-tabs__item-header
           .m-tabs__item-toggle
-        .m-tabs__item-content!= tab.content
+          .m-tabs__item-title.font-l.font-medium!= tab.title
+        .m-tabs__item-content.font-l.font-light!= tab.content
