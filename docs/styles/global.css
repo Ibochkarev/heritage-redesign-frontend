@@ -1715,7 +1715,7 @@ section {
   background-position: center right;
 }
 
-.m-quote-section__wrapper {
+.m-quote-section__wrapper.l-container {
   padding: 5rem 0;
 }
 
@@ -2228,6 +2228,10 @@ section {
 
   .m-section__title {
     margin: 0 auto 5rem;
+  }
+
+  .m-quote-section__wrapper.l-container {
+    padding: 8.25rem 0;
   }
 
   .s-header__burger .ico {

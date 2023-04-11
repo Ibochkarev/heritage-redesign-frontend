@@ -3,8 +3,12 @@
   background-repeat: no-repeat;
   background-position: center right;
 
-  &__wrapper {
+  &__wrapper.l-container {
     padding: rem(80) 0;
+
+    @media (min-width: 1024px) {
+      padding: rem(132) 0;
+    }
   }
 
   &__text {
