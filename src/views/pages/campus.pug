@@ -1,0 +1,13 @@
+extends  ../layouts/default
+
+block variables
+  - const title = "Кампус Сокольники"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_campus.css")
+
+block content
+  include ../../blocks/sections/_campus/s_campus_about/s_campus_about.pug
+
+block append scripts
+  script(defer src="./js/page_campus.js")

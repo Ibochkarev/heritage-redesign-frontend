@@ -3,9 +3,11 @@ extends layouts/default
 block variables
   - const title = "Главная страница проекта"
 
-block content
-  //- include ../blocks/sections/s_intro/s_intro.pug
+block append head
+  link(rel="stylesheet" href="./styles/page_main.css")
 
-block scripts
-  script(defer src="/js/vendor.js")
-  script(defer src="/js/main.js")
+block content
+  include ../blocks/sections/_main/s_international_school/s_international_school.pug
+
+block append scripts
+  script(defer src="./js/page_main.js")

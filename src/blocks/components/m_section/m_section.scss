@@ -1,24 +1,24 @@
-.l-section {
+.m-section {
   &__wrapper {
     overflow: hidden;
-    padding: rem(24) 0;
+    padding: rem(40) 0;
 
-    @media (min-width: 768px) {
-      padding: rem(40) 0;
+    @media (min-width: 1440px) {
+      padding: rem(110) 0;
     }
   }
 
   &__title {
-    margin: 0 auto rem(16);
+    margin: 0 auto rem(24);
     text-align: center;
-    text-transform: uppercase;
+    color: var(--color-dark-blue);
 
     @media (min-width: 768px) {
-      margin: 0 auto rem(20);
+      margin: 0 auto rem(40);
     }
 
     @media (min-width: 1024px) {
-      margin: 0 auto rem(40);
+      margin: 0 auto rem(80);
     }
   }
 

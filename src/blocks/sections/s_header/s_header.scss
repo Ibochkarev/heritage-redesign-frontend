@@ -22,6 +22,7 @@
 
     .ico {
       width: rem(16);
+      fill: var(--color-dark-blue);
 
       @media (min-width: 1024px) {
         width: rem(22);

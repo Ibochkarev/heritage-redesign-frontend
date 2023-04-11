@@ -1,0 +1,18 @@
+.s-campus-about {
+  &__content {
+    max-width: rem(1180);
+    margin: 0 auto  rem(24);
+
+    @media (min-width: 768px) {
+      margin: 0 auto rem(40);
+    }
+
+    @media (min-width: 1024px) {
+      margin: 0 auto rem(80);
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
