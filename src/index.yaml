@@ -7,3 +7,5 @@ PageList:
     ready: 100
   - file: 404.html
     ready: 100
+  - file: blog.html
+    ready: 100

@@ -164,6 +164,8 @@
 }
 
 .s-page-error__content a {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
   text-decoration: underline;
   color: var(--color-dark-blue);
 }

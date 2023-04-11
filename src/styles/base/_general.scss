@@ -111,5 +111,9 @@ section {
   &__title {
     margin-bottom: rem(24);
     color: var(--color-dark-blue);
+
+    @media (min-width: 1440px) {
+      margin-bottom: rem(80);
+    }
   }
 }

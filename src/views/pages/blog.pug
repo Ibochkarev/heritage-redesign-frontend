@@ -1,0 +1,13 @@
+extends  ../layouts/default
+
+block variables
+  - const title = "Блог"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_blog.css")
+
+block content
+  include ../../blocks/sections/_blog/s_page_blog/s_page_blog.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_search.js")

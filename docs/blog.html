@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Блог</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/Lora/lora-v32-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Lora/lora-v32-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Lora/lora-v32-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Lora/lora-v32-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="styles/global.css?v=1681185988470">
+    <link rel="stylesheet" href="./styles/page_blog.css">
+  </head>
+  <body>
+    <div class="l-main">
+      <header class="s-header">
+        <div class="s-header-top">
+          <div class="l-container">
+            <div class="s-header-top__wrapper">
+              <button class="s-header-top__search" type="button" aria-label="Поиск" title="Поиск" style="opacity: 0;">
+                <svg class="ico ico-mono-ic-search">
+                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-search"></use>
+                </svg>
+              </button>
+              <div class="s-header__phone--desktop font-m"><span>Позвонить нам:</span><a href="tel:+79150001415">+7 915 000 14 15</a></div><a class="s-header__phone--mobile" href="tel:+79150001415">
+                <svg class="ico ico-mono-ic-phone-outline">
+                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-phone-outline"></use>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="s-header-bottom">
+          <div class="l-container">
+            <div class="s-header-bottom__wrapper">
+              <div class="s-header__nav-wrap">
+                <button class="s-header__burger" type="button" aria-label="Меню" title="Меню">
+                  <svg class="ico ico-mono-ic-menu">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-menu"></use>
+                  </svg>
+                  <svg class="ico ico-mono-ic-close">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-close"></use>
+                  </svg>
+                </button>
+                <nav class="s-header__navigation">
+                  <button class="s-header__navigation-item s-header__navigation-tab" type="button" aria-label="Каталог" title="Каталог"><span>Каталог</span></button>
+                  <button class="s-header__navigation-item s-header__navigation-tab" type="button" aria-label="О бренде" title="О бренде"><span>О бренде</span></button>
+                  <button class="s-header__navigation-item s-header__navigation-tab" type="button" aria-label="Услуги" title="Услуги"><span>Услуги</span></button><a class="s-header__navigation-item" href="/contacts" title="Контакты"><span>Контакты</span></a>
+                </nav>
+              </div>
+              <div class="s-header__logo"><img class="s-header__logo--desktop" src="./img/global/logo-long.svg" alt=""><img class="s-header__logo--mobile" src="./img/global/logo.svg" alt=""></div>
+              <div class="s-header__actions">
+                <button class="s-header__actions-item s-header__actions-search" type="button" aria-label="Поиск" title="Поиск" hidden>
+                  <svg class="ico ico-mono-ic-search">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-search"></use>
+                  </svg>
+                </button><a class="s-header__actions-item s-header__actions-favorite" href="#" aria-label="Избранное" title="Избранное">
+                  <svg class="ico ico-mono-ic-heart">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-heart"></use>
+                  </svg><span>13</span></a>
+                <button class="s-header__actions-item s-header__actions-cart" type="button" aria-label="Корзина" title="Корзина">
+                  <svg class="ico ico-mono-ic-cart">
+                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                  </svg><span>13</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="l-main__content">
+        <section class="s-page-blog s-page">
+          <div class="l-container">
+            <div class="s-page-blog__wrapper">
+              <div class="m-breadcrumbs">
+                <div class="l-wide">
+                  <ul class="m-breadcrumbs__list" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+                    <li class="m-breadcrumbs__item" itemscope="itemscope" itemprop="itemListElement" itemtype="https://schema.org/ListItem"><span class="m-breadcrumbs__link font-l" itemprop="name">Главная</span>
+                      <meta itemprop="position" content="0"/>
+                      <meta itemprop="item" content="#"/>
+                    </li>
+                    <li class="m-breadcrumbs__item"><span class="m-breadcrumbs__link-current font-l" itemprop="name">Блог</span>
+                      <meta itemprop="item" content="#"/>
+                      <meta itemprop="position" content=""/>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h1 class="s-page__title font-h2">Блог</h1>
+              <div class="s-page-blog__items">
+                <div class="m-blog-card"><a class="m-blog-card__cover" href=""><img class="m-blog-card__image" src="./img/demo/blog/1.jpg" alt=""/></a>
+                  <div class="m-blog-card__wrapper">
+                    <div class="m-blog-card__headline">
+                      <div class="m-blog-card__stars">
+                        <svg class="ico ico-mono-ic-star">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-star"></use>
+                        </svg>
+                        <div class="m-blog-card__stars-counter font-m font-medium">5</div>
+                      </div>
+                      <div class="m-blog-card__time font-s font-medium">
+                        <svg class="ico ico-mono-ic-outline-access-time">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-outline-access-time"></use>
+                        </svg>Время чтения:<span class="font-regular">10 мин</span>
+                      </div>
+                    </div>
+                    <div class="m-blog-card__info">
+                      <div class="m-blog-card__content">
+                        <div class="m-blog-card__title font-m">Государственная или частная школа — что лучше?</div>
+                        <div class="m-blog-card__text font-s font-light">Что лучше – государственная или частная школа? За что платят родители учеников частных школ? Чего не хватает государственным школам и какие навыки, можно получить только в частной школе? Анализируем плюсы и минусы бесплатного и платного образования и делаем выводы.</div>
+                      </div>
+                      <div class="m-blog-card__footer"><a class="m-blog-card__more" href=""><span class="font-s font-medium">читать подробнее</span></a>
+                        <div class="m-blog-card__date font-s font-light">16. 03. 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-blog-card"><a class="m-blog-card__cover" href=""><img class="m-blog-card__image" src="./img/demo/blog/2.jpg" alt=""/></a>
+                  <div class="m-blog-card__wrapper">
+                    <div class="m-blog-card__headline">
+                      <div class="m-blog-card__stars">
+                        <svg class="ico ico-mono-ic-star">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-star"></use>
+                        </svg>
+                        <div class="m-blog-card__stars-counter font-m font-medium">5</div>
+                      </div>
+                      <div class="m-blog-card__time font-s font-medium">
+                        <svg class="ico ico-mono-ic-outline-access-time">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-outline-access-time"></use>
+                        </svg>Время чтения:<span class="font-regular">10 мин</span>
+                      </div>
+                    </div>
+                    <div class="m-blog-card__info">
+                      <div class="m-blog-card__content">
+                        <div class="m-blog-card__title font-m">Система Монтессори – что это такое. Плюсы и минусы методики.</div>
+                        <div class="m-blog-card__text font-s font-light">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Одна рукописи которой алфавит напоивший повстречался меня, бросил сих великий эта маленькая послушавшись его за это продолжил? Там, дороге то?</div>
+                      </div>
+                      <div class="m-blog-card__footer"><a class="m-blog-card__more" href=""><span class="font-s font-medium">читать подробнее</span></a>
+                        <div class="m-blog-card__date font-s font-light">16. 03. 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-blog-card"><a class="m-blog-card__cover" href=""><img class="m-blog-card__image" src="./img/demo/blog/3.jpg" alt=""/></a>
+                  <div class="m-blog-card__wrapper">
+                    <div class="m-blog-card__headline">
+                      <div class="m-blog-card__stars">
+                        <svg class="ico ico-mono-ic-star">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-star"></use>
+                        </svg>
+                        <div class="m-blog-card__stars-counter font-m font-medium">5</div>
+                      </div>
+                      <div class="m-blog-card__time font-s font-medium">
+                        <svg class="ico ico-mono-ic-outline-access-time">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-outline-access-time"></use>
+                        </svg>Время чтения:<span class="font-regular">10 мин</span>
+                      </div>
+                    </div>
+                    <div class="m-blog-card__info">
+                      <div class="m-blog-card__content">
+                        <div class="m-blog-card__title font-m">Платное или бесплатное образование</div>
+                        <div class="m-blog-card__text font-s font-light">Школьное образование обязательно для всех. Однако, кто-то учится в районной муниципальной школе, а кто-то посещает элитную частную школу. Что лучше? Разбираемся с плюсами и минусами платного и бесплатного образования и оцениваем перспективы развития частного сегмента образования в России.</div>
+                      </div>
+                      <div class="m-blog-card__footer"><a class="m-blog-card__more" href=""><span class="font-s font-medium">читать подробнее</span></a>
+                        <div class="m-blog-card__date font-s font-light">16. 03. 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-blog-card"><a class="m-blog-card__cover" href=""><img class="m-blog-card__image" src="./img/demo/blog/1.jpg" alt=""/></a>
+                  <div class="m-blog-card__wrapper">
+                    <div class="m-blog-card__headline">
+                      <div class="m-blog-card__stars">
+                        <svg class="ico ico-mono-ic-star">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-star"></use>
+                        </svg>
+                        <div class="m-blog-card__stars-counter font-m font-medium">5</div>
+                      </div>
+                      <div class="m-blog-card__time font-s font-medium">
+                        <svg class="ico ico-mono-ic-outline-access-time">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-outline-access-time"></use>
+                        </svg>Время чтения:<span class="font-regular">10 мин</span>
+                      </div>
+                    </div>
+                    <div class="m-blog-card__info">
+                      <div class="m-blog-card__content">
+                        <div class="m-blog-card__title font-m">Государственная или частная школа — что лучше?</div>
+                        <div class="m-blog-card__text font-s font-light">Что лучше – государственная или частная школа? За что платят родители учеников частных школ? Чего не хватает государственным школам и какие навыки, можно получить только в частной школе? Анализируем плюсы и минусы бесплатного и платного образования и делаем выводы.</div>
+                      </div>
+                      <div class="m-blog-card__footer"><a class="m-blog-card__more" href=""><span class="font-s font-medium">читать подробнее</span></a>
+                        <div class="m-blog-card__date font-s font-light">16. 03. 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-blog-card"><a class="m-blog-card__cover" href=""><img class="m-blog-card__image" src="./img/demo/blog/2.jpg" alt=""/></a>
+                  <div class="m-blog-card__wrapper">
+                    <div class="m-blog-card__headline">
+                      <div class="m-blog-card__stars">
+                        <svg class="ico ico-mono-ic-star">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-star"></use>
+                        </svg>
+                        <div class="m-blog-card__stars-counter font-m font-medium">5</div>
+                      </div>
+                      <div class="m-blog-card__time font-s font-medium">
+                        <svg class="ico ico-mono-ic-outline-access-time">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-outline-access-time"></use>
+                        </svg>Время чтения:<span class="font-regular">10 мин</span>
+                      </div>
+                    </div>
+                    <div class="m-blog-card__info">
+                      <div class="m-blog-card__content">
+                        <div class="m-blog-card__title font-m">Система Монтессори – что это такое. Плюсы и минусы методики.</div>
+                        <div class="m-blog-card__text font-s font-light">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Одна рукописи которой алфавит напоивший повстречался меня, бросил сих великий эта маленькая послушавшись его за это продолжил? Там, дороге то?</div>
+                      </div>
+                      <div class="m-blog-card__footer"><a class="m-blog-card__more" href=""><span class="font-s font-medium">читать подробнее</span></a>
+                        <div class="m-blog-card__date font-s font-light">16. 03. 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-blog-card"><a class="m-blog-card__cover" href=""><img class="m-blog-card__image" src="./img/demo/blog/3.jpg" alt=""/></a>
+                  <div class="m-blog-card__wrapper">
+                    <div class="m-blog-card__headline">
+                      <div class="m-blog-card__stars">
+                        <svg class="ico ico-mono-ic-star">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-star"></use>
+                        </svg>
+                        <div class="m-blog-card__stars-counter font-m font-medium">5</div>
+                      </div>
+                      <div class="m-blog-card__time font-s font-medium">
+                        <svg class="ico ico-mono-ic-outline-access-time">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-outline-access-time"></use>
+                        </svg>Время чтения:<span class="font-regular">10 мин</span>
+                      </div>
+                    </div>
+                    <div class="m-blog-card__info">
+                      <div class="m-blog-card__content">
+                        <div class="m-blog-card__title font-m">Платное или бесплатное образование</div>
+                        <div class="m-blog-card__text font-s font-light">Школьное образование обязательно для всех. Однако, кто-то учится в районной муниципальной школе, а кто-то посещает элитную частную школу. Что лучше? Разбираемся с плюсами и минусами платного и бесплатного образования и оцениваем перспективы развития частного сегмента образования в России.</div>
+                      </div>
+                      <div class="m-blog-card__footer"><a class="m-blog-card__more" href=""><span class="font-s font-medium">читать подробнее</span></a>
+                        <div class="m-blog-card__date font-s font-light">16. 03. 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-blog-card"><a class="m-blog-card__cover" href=""><img class="m-blog-card__image" src="./img/demo/blog/1.jpg" alt=""/></a>
+                  <div class="m-blog-card__wrapper">
+                    <div class="m-blog-card__headline">
+                      <div class="m-blog-card__stars">
+                        <svg class="ico ico-mono-ic-star">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-star"></use>
+                        </svg>
+                        <div class="m-blog-card__stars-counter font-m font-medium">5</div>
+                      </div>
+                      <div class="m-blog-card__time font-s font-medium">
+                        <svg class="ico ico-mono-ic-outline-access-time">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-outline-access-time"></use>
+                        </svg>Время чтения:<span class="font-regular">10 мин</span>
+                      </div>
+                    </div>
+                    <div class="m-blog-card__info">
+                      <div class="m-blog-card__content">
+                        <div class="m-blog-card__title font-m">Государственная или частная школа — что лучше?</div>
+                        <div class="m-blog-card__text font-s font-light">Что лучше – государственная или частная школа? За что платят родители учеников частных школ? Чего не хватает государственным школам и какие навыки, можно получить только в частной школе? Анализируем плюсы и минусы бесплатного и платного образования и делаем выводы.</div>
+                      </div>
+                      <div class="m-blog-card__footer"><a class="m-blog-card__more" href=""><span class="font-s font-medium">читать подробнее</span></a>
+                        <div class="m-blog-card__date font-s font-light">16. 03. 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-blog-card"><a class="m-blog-card__cover" href=""><img class="m-blog-card__image" src="./img/demo/blog/2.jpg" alt=""/></a>
+                  <div class="m-blog-card__wrapper">
+                    <div class="m-blog-card__headline">
+                      <div class="m-blog-card__stars">
+                        <svg class="ico ico-mono-ic-star">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-star"></use>
+                        </svg>
+                        <div class="m-blog-card__stars-counter font-m font-medium">5</div>
+                      </div>
+                      <div class="m-blog-card__time font-s font-medium">
+                        <svg class="ico ico-mono-ic-outline-access-time">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-outline-access-time"></use>
+                        </svg>Время чтения:<span class="font-regular">10 мин</span>
+                      </div>
+                    </div>
+                    <div class="m-blog-card__info">
+                      <div class="m-blog-card__content">
+                        <div class="m-blog-card__title font-m">Система Монтессори – что это такое. Плюсы и минусы методики.</div>
+                        <div class="m-blog-card__text font-s font-light">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Одна рукописи которой алфавит напоивший повстречался меня, бросил сих великий эта маленькая послушавшись его за это продолжил? Там, дороге то?</div>
+                      </div>
+                      <div class="m-blog-card__footer"><a class="m-blog-card__more" href=""><span class="font-s font-medium">читать подробнее</span></a>
+                        <div class="m-blog-card__date font-s font-light">16. 03. 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-blog-card"><a class="m-blog-card__cover" href=""><img class="m-blog-card__image" src="./img/demo/blog/3.jpg" alt=""/></a>
+                  <div class="m-blog-card__wrapper">
+                    <div class="m-blog-card__headline">
+                      <div class="m-blog-card__stars">
+                        <svg class="ico ico-mono-ic-star">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-star"></use>
+                        </svg>
+                        <div class="m-blog-card__stars-counter font-m font-medium">5</div>
+                      </div>
+                      <div class="m-blog-card__time font-s font-medium">
+                        <svg class="ico ico-mono-ic-outline-access-time">
+                          <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-outline-access-time"></use>
+                        </svg>Время чтения:<span class="font-regular">10 мин</span>
+                      </div>
+                    </div>
+                    <div class="m-blog-card__info">
+                      <div class="m-blog-card__content">
+                        <div class="m-blog-card__title font-m">Платное или бесплатное образование</div>
+                        <div class="m-blog-card__text font-s font-light">Школьное образование обязательно для всех. Однако, кто-то учится в районной муниципальной школе, а кто-то посещает элитную частную школу. Что лучше? Разбираемся с плюсами и минусами платного и бесплатного образования и оцениваем перспективы развития частного сегмента образования в России.</div>
+                      </div>
+                      <div class="m-blog-card__footer"><a class="m-blog-card__more" href=""><span class="font-s font-medium">читать подробнее</span></a>
+                        <div class="m-blog-card__date font-s font-light">16. 03. 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="s-footer">
+        <div class="l-container">
+          <div class="s-footer__wrapper">
+            <div class="s-footer__content">
+              <div class="s-footer__column"><a class="s-footer__title" href="">О школе</a>
+                <ul class="s-footer__menu">
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Приветствие основателя</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Наше видение</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Наши ценности</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Сведения об образовательной организации</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Карьера в Heritage</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Тренинги для родителей</a></li>
+                </ul>
+              </div>
+              <div class="s-footer__column"><a class="s-footer__title" href="">Программы</a>
+                <ul class="s-footer__menu">
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Международная программа</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Российская программа</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Детский сад</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Начальная школа</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Средняя школа</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Смешанное обучение</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Спортивное образование</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Кембриджская аккредитация</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Экзамены</a></li>
+                </ul>
+              </div>
+              <div class="s-footer__column"><a class="s-footer__title" href="">Родителям</a>
+                <ul class="s-footer__menu">
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Ценностное образование</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Система Домов</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Мышление роста</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Безопасная среда</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Дополнительная программа</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Студенческое самоуправление</a></li>
+                </ul>
+              </div>
+              <div class="s-footer__column"><a class="s-footer__title" href="">Кампусы</a>
+                <ul class="s-footer__menu">
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Кампус Сокольники</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Кампус Ленинский</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Кампус Тюмень</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">La Berёzka</a></li>
+                </ul>
+              </div>
+              <div class="s-footer__column"><a class="s-footer__title" href="">Поступление</a>
+                <ul class="s-footer__menu">
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">Стоимость</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">День открытых дверей (Тюмень)</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-s font-light" href="#">День открытых дверей (Сокольники)</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-menu is-uppercase" href="#">Блог</a></li>
+                  <li class="s-footer__menu-item"><a class="s-footer__menu-link font-menu is-uppercase" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="s-footer__column s-footer__column--contacts"><a class="s-footer__phone font-xl" href="+tel:88005551979">8 (800) 555-19-79</a>
+                <div class="s-footer__logo"><img src="./img/global/logo.svg" alt=""></div>
+              </div>
+            </div>
+            <div class="s-footer__bottom font-s font-light">
+              <div class="s-footer__bottom-col">© 2020-2023 Heritage International School</div>
+              <div class="s-footer__bottom-col"><a href="">Политика защиты персональных данных</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script defer src="./js/main.js?v=1681185988470"></script>
+    <script defer src="./js/vendor.js?v=1681185988470"></script>
+  </body>
+</html>

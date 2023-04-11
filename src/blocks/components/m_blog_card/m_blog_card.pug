@@ -1,0 +1,21 @@
+mixin m_blog_card(title, text, date, image)
+  .m-blog-card
+    a.m-blog-card__cover(href="")
+      img.m-blog-card__image(src= image, alt="")
+    .m-blog-card__wrapper
+      .m-blog-card__headline
+        .m-blog-card__stars
+          +svgMono("ic-star")
+          .m-blog-card__stars-counter.font-m.font-medium 5
+        .m-blog-card__time.font-s.font-medium
+          +svgMono("ic-outline-access-time")
+          | Время чтения:
+          span.font-regular 10 мин
+      .m-blog-card__info
+        .m-blog-card__content
+          .m-blog-card__title.font-m= title
+          .m-blog-card__text.font-s.font-light= text
+        .m-blog-card__footer
+          a.m-blog-card__more(href="")
+            span.font-s.font-medium читать подробнее
+          .m-blog-card__date.font-s.font-light= date

@@ -1411,6 +1411,12 @@ section {
   fill: #C49A6C;
 }
 
+.ico-mono-ic-outline-access-time {
+  width: 1em;
+  height: 1em;
+  fill: #C49A6C;
+}
+
 .ico-mono-ic-quote-bottom {
   width: 0.88em;
   height: 1em;
@@ -1427,6 +1433,12 @@ section {
   width: 1em;
   height: 1em;
   fill: #fff;
+}
+
+.ico-mono-ic-star {
+  width: 0.96em;
+  height: 1em;
+  fill: #C49A6C;
 }
 
 .ico-mono-ic-telegram {
@@ -2496,6 +2508,10 @@ section {
 @media (min-width: 1440px) {
   .s-page {
     padding: 5rem 0;
+  }
+
+  .s-page__title {
+    margin-bottom: 5rem;
   }
 
   .m-breadcrumbs {
