@@ -7,7 +7,9 @@ block append head
   link(rel="stylesheet" href="./styles/page_main.css")
 
 block content
+  +m_quote_section('If a child cannot learn in the way we teach we must teach in a way the child can learn', './img/global/quote-bg-1.svg')
   include ../blocks/sections/_main/s_international_school/s_international_school.pug
+  +m_quote_section('One school - two diplomas', './img/global/quote-bg-2.svg')
 
 block append scripts
   script(defer src="./js/page_main.js")

@@ -158,8 +158,8 @@
 .s-page-covid__content {
   font-weight: 300;
   color: var(--color-black);
-  font-size: 0.875rem;
-  line-height: 1.125rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .m-tabs {
@@ -297,8 +297,8 @@
   }
 
   .s-page-covid__content {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

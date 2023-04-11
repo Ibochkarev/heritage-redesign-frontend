@@ -34,17 +34,10 @@
       top: 50%;
       left: 50%;
       display: block;
-      width: rem(31);
-      height: rem(24);
       border: 0;
       transform: translate(-50%, -50%);
       transition: 0.5s all ease;
       background-color: transparent;
-
-      @media (min-width: 768px) {
-        width: rem(87);
-        height: rem(66);
-      }
 
       span {
         position: relative;
