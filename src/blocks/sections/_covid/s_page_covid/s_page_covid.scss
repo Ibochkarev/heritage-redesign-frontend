@@ -2,4 +2,18 @@
   &__wrapper {
     max-width: rem(1180);
   }
+
+  &__tabs {
+    margin-bottom: rem(24);
+
+    @media (min-width: 1024px) {
+      margin-bottom: rem(80);
+    }
+  }
+
+  &__content {
+    font-weight: 300;
+    color: var(--color-black);
+    @include font-l;
+  }
 }

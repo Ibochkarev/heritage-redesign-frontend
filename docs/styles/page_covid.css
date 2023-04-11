@@ -151,6 +151,17 @@
   max-width: 73.75rem;
 }
 
+.s-page-covid__tabs {
+  margin-bottom: 1.5rem;
+}
+
+.s-page-covid__content {
+  font-weight: 300;
+  color: var(--color-black);
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
 .m-tabs {
   display: -ms-grid;
   display: grid;
@@ -284,9 +295,18 @@
     font-size: 1rem;
     line-height: 1.375rem;
   }
+
+  .s-page-covid__content {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .s-page-covid__tabs {
+    margin-bottom: 5rem;
+  }
+
   .m-tabs__item {
     padding: 1rem 1.5rem 1rem 6.4375rem;
   }

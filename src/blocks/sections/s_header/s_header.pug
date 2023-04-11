@@ -1,47 +1,74 @@
 -
   var headerLeftMenu = [
-    { title: 'Каталог', link: '#' },
-    { title: 'О бренде', link: '#' },
-    { title: 'Услуги', link: '#' },
+    { title: 'О школе', link: '#', subMenu: [
+        { title: 'Приветствие основателя', link: '#', },
+        { title: 'Наше видение', link: '#', },
+        { title: 'Наши ценности', link: '#', },
+        { title: 'Сведения об образовательной организации', link: '#', },
+        { title: 'Карьера в Heritage', link: '#', },
+      ]
+    },
+    { title: 'Обучение', link: '#', subMenu: [
+        { title: 'Международная программа', link: '#', },
+        { title: 'Российская программа', link: '#', },
+        { title: 'Детский сад', link: '#', },
+        { title: 'Начальная школа', link: '#', },
+        { title: 'Средняя школа', link: '#', },
+        { title: 'Экзамены', link: '#', },
+        { title: 'Смешанное обучение', link: '#', },
+        { title: 'Спортивное образование', link: '#', },
+        { title: 'Кембриджская аккредитация', link: '#', },
+      ]
+    },
+    { title: 'Преимущества', link: '#', subMenu: [
+        { title: 'Ценностное образование', link: '#', },
+        { title: 'Система Домов', link: '#', },
+        { title: 'Мышление роста', link: '#', },
+        { title: 'Безопасная среда', link: '#', },
+        { title: 'Дополнительная программа', link: '#', },
+      ]
+    },
+    { title: 'Кампусы', link: '#', subMenu: [
+        { title: 'Кампус Сокольники', link: '#', },
+        { title: 'Кампус Ленинский', link: '#', },
+        { title: 'Кампус Тюмень', link: '#', },
+        { title: 'La Berёzka', link: '#', },
+      ]
+    },
+    { title: 'Поступление', link: '#', subMenu: [
+        { title: 'Стоимость', link: '#', },
+        { title: 'День открытых дверей (Тюмень)', link: '#', },
+        { title: 'День открытых дверей (Сокольники)', link: '#', },
+      ]
+    },
+    { title: 'Блог', link: '#' },
+    { title: 'Контакты', link: '#' },
   ]
 
 header.s-header
-  .s-header-top
-    .l-container
-      .s-header-top__wrapper
-        button.s-header-top__search(type="button" aria-label="Поиск" title="Поиск" style="opacity: 0;")
-          +svgMono("ic-search")
-
-        .s-header__phone--desktop.font-m
-          span Позвонить нам:
-          a(href="tel:+79150001415") +7 915 000 14 15
-
-        a.s-header__phone--mobile(href="tel:+79150001415")
-          +svgMono("ic-phone-outline")
-
-  .s-header-bottom
-    .l-container
-      .s-header-bottom__wrapper
-        .s-header__nav-wrap
-          button.s-header__burger(type="button" aria-label="Меню" title="Меню")
-            +svgMono("ic-menu")
-            +svgMono("ic-close")
-          nav.s-header__navigation
-            each itemMenu in headerLeftMenu
-              button.s-header__navigation-item.s-header__navigation-tab(type="button" aria-label=itemMenu.title title=itemMenu.title)
+  .l-container
+    .s-header__wrapper
+      .s-header__nav-wrap
+        button.s-header__burger(type="button" aria-label="Меню" title="Меню")
+          +svgMono("ic-menu")
+          +svgMono("ic-close")
+        ul.s-header__navigation
+          each itemMenu in headerLeftMenu
+            li.s-header__navigation-item
+              a.s-header__navigation-link.font-menu(href=itemMenu.link, aria-label=itemMenu.title, title=itemMenu.title)
                 span= itemMenu.title
-            a.s-header__navigation-item(href="/contacts" title="Контакты")
-              span Контакты
+              if itemMenu.subMenu
+                ul.s-header__submenu
+                  each item in itemMenu.subMenu
+                    li.s-header__submenu-item
+                      a.s-header__submenu-link.font-s.font-light(href=item.link)= item.title
 
-        .s-header__logo
-          img.s-header__logo--desktop(src="./img/global/logo-long.svg", alt="")
-          img.s-header__logo--mobile(src="./img/global/logo.svg", alt="")
-        .s-header__actions
-          button.s-header__actions-item.s-header__actions-search(type="button" aria-label="Поиск" title="Поиск" hidden)
-            +svgMono("ic-search")
-          a.s-header__actions-item.s-header__actions-favorite(href="#" aria-label="Избранное" title="Избранное")
-            +svgMono("ic-heart")
-            span 13
-          button.s-header__actions-item.s-header__actions-cart(type="button" aria-label="Корзина" title="Корзина")
-            +svgMono("ic-cart")
-            span 13
+      .s-header__logo
+        img.s-header__logo-image(src="./img/global/logo.svg", alt="")
+
+      .s-header__actions
+        a.s-header__actions-item.s-header__actions-language(href="#" aria-label="English" title="English") En
+        a.s-header__actions-item.s-header__actions-search(href="#" aria-label="Поиск" title="Поиск")
+          +svgMono("ic-search")
+        button.s-header__actions-item.s-header__actions-eye.bvi-open(type="button" aria-label="Версия сайта для слабовидящих" title="Версия сайта для слабовидящих")
+          +svgMono("ic-eye")

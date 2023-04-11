@@ -33,60 +33,85 @@
     <link rel="preload" href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="styles/global.css?v=1681187426497">
+    <link rel="stylesheet" href="styles/global.css?v=1681193142411">
   </head>
   <body>
     <div class="l-main">
       <header class="s-header">
-        <div class="s-header-top">
-          <div class="l-container">
-            <div class="s-header-top__wrapper">
-              <button class="s-header-top__search" type="button" aria-label="Поиск" title="Поиск" style="opacity: 0;">
-                <svg class="ico ico-mono-ic-search">
-                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-search"></use>
+        <div class="l-container">
+          <div class="s-header__wrapper">
+            <div class="s-header__nav-wrap">
+              <button class="s-header__burger" type="button" aria-label="Меню" title="Меню">
+                <svg class="ico ico-mono-ic-menu">
+                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-menu"></use>
+                </svg>
+                <svg class="ico ico-mono-ic-close">
+                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-close"></use>
                 </svg>
               </button>
-              <div class="s-header__phone--desktop font-m"><span>Позвонить нам:</span><a href="tel:+79150001415">+7 915 000 14 15</a></div><a class="s-header__phone--mobile" href="tel:+79150001415">
-                <svg class="ico ico-mono-ic-phone-outline">
-                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-phone-outline"></use>
-                </svg></a>
+              <ul class="s-header__navigation">
+                <li class="s-header__navigation-item"><a class="s-header__navigation-link font-menu" href="#" aria-label="О школе" title="О школе"><span>О школе</span></a>
+                  <ul class="s-header__submenu">
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Приветствие основателя</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Наше видение</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Наши ценности</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Сведения об образовательной организации</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Карьера в Heritage</a></li>
+                  </ul>
+                </li>
+                <li class="s-header__navigation-item"><a class="s-header__navigation-link font-menu" href="#" aria-label="Обучение" title="Обучение"><span>Обучение</span></a>
+                  <ul class="s-header__submenu">
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Международная программа</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Российская программа</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Детский сад</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Начальная школа</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Средняя школа</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Экзамены</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Смешанное обучение</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Спортивное образование</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Кембриджская аккредитация</a></li>
+                  </ul>
+                </li>
+                <li class="s-header__navigation-item"><a class="s-header__navigation-link font-menu" href="#" aria-label="Преимущества" title="Преимущества"><span>Преимущества</span></a>
+                  <ul class="s-header__submenu">
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Ценностное образование</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Система Домов</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Мышление роста</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Безопасная среда</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Дополнительная программа</a></li>
+                  </ul>
+                </li>
+                <li class="s-header__navigation-item"><a class="s-header__navigation-link font-menu" href="#" aria-label="Кампусы" title="Кампусы"><span>Кампусы</span></a>
+                  <ul class="s-header__submenu">
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Кампус Сокольники</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Кампус Ленинский</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Кампус Тюмень</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">La Berёzka</a></li>
+                  </ul>
+                </li>
+                <li class="s-header__navigation-item"><a class="s-header__navigation-link font-menu" href="#" aria-label="Поступление" title="Поступление"><span>Поступление</span></a>
+                  <ul class="s-header__submenu">
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">Стоимость</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">День открытых дверей (Тюмень)</a></li>
+                    <li class="s-header__submenu-item"><a class="s-header__submenu-link font-s font-light" href="#">День открытых дверей (Сокольники)</a></li>
+                  </ul>
+                </li>
+                <li class="s-header__navigation-item"><a class="s-header__navigation-link font-menu" href="#" aria-label="Блог" title="Блог"><span>Блог</span></a>
+                </li>
+                <li class="s-header__navigation-item"><a class="s-header__navigation-link font-menu" href="#" aria-label="Контакты" title="Контакты"><span>Контакты</span></a>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="s-header-bottom">
-          <div class="l-container">
-            <div class="s-header-bottom__wrapper">
-              <div class="s-header__nav-wrap">
-                <button class="s-header__burger" type="button" aria-label="Меню" title="Меню">
-                  <svg class="ico ico-mono-ic-menu">
-                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-menu"></use>
-                  </svg>
-                  <svg class="ico ico-mono-ic-close">
-                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-close"></use>
-                  </svg>
-                </button>
-                <nav class="s-header__navigation">
-                  <button class="s-header__navigation-item s-header__navigation-tab" type="button" aria-label="Каталог" title="Каталог"><span>Каталог</span></button>
-                  <button class="s-header__navigation-item s-header__navigation-tab" type="button" aria-label="О бренде" title="О бренде"><span>О бренде</span></button>
-                  <button class="s-header__navigation-item s-header__navigation-tab" type="button" aria-label="Услуги" title="Услуги"><span>Услуги</span></button><a class="s-header__navigation-item" href="/contacts" title="Контакты"><span>Контакты</span></a>
-                </nav>
-              </div>
-              <div class="s-header__logo"><img class="s-header__logo--desktop" src="./img/global/logo-long.svg" alt=""><img class="s-header__logo--mobile" src="./img/global/logo.svg" alt=""></div>
-              <div class="s-header__actions">
-                <button class="s-header__actions-item s-header__actions-search" type="button" aria-label="Поиск" title="Поиск" hidden>
-                  <svg class="ico ico-mono-ic-search">
-                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-search"></use>
-                  </svg>
-                </button><a class="s-header__actions-item s-header__actions-favorite" href="#" aria-label="Избранное" title="Избранное">
-                  <svg class="ico ico-mono-ic-heart">
-                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-heart"></use>
-                  </svg><span>13</span></a>
-                <button class="s-header__actions-item s-header__actions-cart" type="button" aria-label="Корзина" title="Корзина">
-                  <svg class="ico ico-mono-ic-cart">
-                    <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-cart"></use>
-                  </svg><span>13</span>
-                </button>
-              </div>
+            <div class="s-header__logo"><img class="s-header__logo-image" src="./img/global/logo.svg" alt=""></div>
+            <div class="s-header__actions"><a class="s-header__actions-item s-header__actions-language" href="#" aria-label="English" title="English">En</a><a class="s-header__actions-item s-header__actions-search" href="#" aria-label="Поиск" title="Поиск">
+                <svg class="ico ico-mono-ic-search">
+                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-search"></use>
+                </svg></a>
+              <button class="s-header__actions-item s-header__actions-eye bvi-open" type="button" aria-label="Версия сайта для слабовидящих" title="Версия сайта для слабовидящих">
+                <svg class="ico ico-mono-ic-eye">
+                  <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-eye"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
