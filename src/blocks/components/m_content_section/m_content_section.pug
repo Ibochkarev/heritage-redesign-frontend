@@ -1,0 +1,11 @@
+mixin m_content_section(className=false, title=title, image=image, reverse=false)
+  section.m-content-section(class=className, class={'m-content-section--reverse' : reverse})&attributes(attributes)
+    .m-content-section__wrapper(class=`${className}__wrapper`)
+      .m-content-section__image
+        img.m-content-section__image-bg(src=image)
+      .m-content-section__info
+        .l-container
+          .m-content-section__information
+            h2.m-content-section__title.font-h2!= title
+            if block
+              block
