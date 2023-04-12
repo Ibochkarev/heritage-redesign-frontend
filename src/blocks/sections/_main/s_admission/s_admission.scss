@@ -1,0 +1,28 @@
+.s-admission {
+  &__subtitle {
+    margin-bottom: rem(24);
+    color: var(--color-black);
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__text {
+    margin-bottom: rem(24);
+    color: var(--color-black);
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__button {
+    margin-bottom: rem(24);
+
+    @media (min-width: 768px) {
+      width: max-content;
+      margin-bottom: rem(40);
+    }
+  }
+}

@@ -1,6 +1,7 @@
 .m-content-section {
   display: flex;
   flex-direction: column;
+  background-color: var(--color-white);
 
   &__wrapper {
     overflow: hidden;
@@ -9,6 +10,19 @@
 
     @media (min-width: 768px) {
       flex-wrap: nowrap;
+    }
+
+    &--reverse {
+      @media (min-width: 768px) {
+        flex-direction: row-reverse;
+      }
+
+      .m-content-section__information {
+        @media (min-width: 1024px) {
+          padding-left: 0;
+          padding-right: rem(80);
+        }
+      }
     }
   }
 

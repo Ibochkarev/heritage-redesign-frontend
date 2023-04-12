@@ -1789,6 +1789,7 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: var(--color-white);
 }
 
 .m-content-section__wrapper {
@@ -2219,6 +2220,13 @@ section {
     flex-wrap: nowrap;
   }
 
+  .m-content-section__wrapper--reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
   .m-content-section__image-bg {
     position: absolute;
     top: 0;
@@ -2357,6 +2365,11 @@ section {
 
   .m-quote-section__wrapper.l-container {
     padding: 8.25rem 0;
+  }
+
+  .m-content-section__wrapper--reverse .m-content-section__information {
+    padding-left: 0;
+    padding-right: 5rem;
   }
 
   .m-content-section__information {

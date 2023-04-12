@@ -1,6 +1,6 @@
 mixin m_content_section(className=false, title=title, image=image, reverse=false)
-  section.m-content-section(class=className, class={'m-content-section--reverse' : reverse})&attributes(attributes)
-    .m-content-section__wrapper(class=`${className}__wrapper`)
+  section.m-content-section(class=className)&attributes(attributes)
+    .m-content-section__wrapper(class=`${className}__wrapper` class={'m-content-section__wrapper--reverse' : reverse})
       .m-content-section__image
         img.m-content-section__image-bg(src=image)
       .m-content-section__info
