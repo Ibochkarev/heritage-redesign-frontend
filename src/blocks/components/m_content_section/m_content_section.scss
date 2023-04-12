@@ -19,8 +19,8 @@
 
       .m-content-section__information {
         @media (min-width: 1024px) {
-          padding-left: 0;
           padding-right: rem(80);
+          padding-left: 0;
         }
       }
     }
@@ -28,17 +28,19 @@
 
   &__image {
     position: relative;
+    display: grid;
     flex: 0 0 100%;
+    place-items: center;
 
-    @media (min-width: 574px) {
+    @media (min-width: 575px) {
       flex: 0 0 50%;
     }
 
     &-bg {
       width: 100%;
-      height: rem(414);
+      height: auto;
 
-      @media (min-width: 768px) {
+      @media (min-width: 575px) {
         position: absolute;
         top: 0;
         left: 0;

@@ -390,6 +390,20 @@
   object-fit: cover;
 }
 
+.s-greetings__subtitle {
+  margin-bottom: 1.5rem;
+  color: var(--color-black);
+}
+
+.s-greetings__text {
+  margin-bottom: 1.5rem;
+  color: var(--color-black);
+}
+
+.s-greetings__info {
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 768px) {
   .s-campus-about__text {
     margin: 0 auto 2.5rem;
@@ -414,6 +428,24 @@
     -webkit-box-flex: 1;
     -ms-flex: 1 1 25%;
     flex: 1 1 25%;
+  }
+
+  .s-greetings__subtitle {
+    margin-bottom: 2.5rem;
+  }
+
+  .s-greetings__text {
+    margin-bottom: 2.5rem;
+  }
+
+  .s-greetings__info {
+    margin-bottom: 2.5rem;
+  }
+
+  .s-greetings__button {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
