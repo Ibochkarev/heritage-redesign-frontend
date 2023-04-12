@@ -1,0 +1,14 @@
+extends  ../layouts/default
+
+block variables
+  - const title = "Кампус Сокольники"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_greetings.css")
+
+block content
+  include ../../blocks/sections/_greetings/s_page_greetings/s_page_greetings.pug
+  include ../../blocks/sections/_greetings/s_greetings/s_greetings.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_campus.js")

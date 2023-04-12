@@ -1,0 +1,38 @@
+.s-greetings {
+  &__text {
+    margin-bottom: rem(24);
+    color: var(--color-black);
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: rem(24);
+    gap: rem(24);
+    flex-direction: column-reverse;
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(40);
+      flex-direction: column;
+    }
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: rem(168);
+
+        @media (min-width: 768px) {
+          max-width: rem(307);
+        }
+      }
+    }
+  }
+}

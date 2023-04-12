@@ -15,3 +15,5 @@ PageList:
     ready: 100
   - file: campus.html
     ready: 30
+  - file: greetings.html
+    ready: 30
