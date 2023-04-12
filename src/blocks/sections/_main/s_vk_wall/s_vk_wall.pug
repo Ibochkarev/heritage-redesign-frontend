@@ -1,0 +1,34 @@
+-
+  var vkItems = [
+    { id: 1 },
+    { id: 2 },
+    { id: 3 },
+    { id: 4 },
+    { id: 5 },
+    { id: 6 },
+    { id: 7 },
+    { id: 8 },
+    { id: 9 },
+    { id: 10 }
+  ]
+
++section('s-vk-wall', '', true, false)
+  h2.m-section__title.font-h2
+    a(href="https://vk.com/heritageschool", target="_blank", rel="nofollow") #heritageschool
+  .s-vk-wall__social
+    .s-vk-wall__social-title.font-xl.font-medium Подписывайтесь на нас
+    .s-vk-wall__social-list
+      a.s-vk-wall__social-link(href="", target="_blank", rel="noopener")
+        +svgMono('ic-whatsapp')
+      a.s-vk-wall__social-link(href="", target="_blank", rel="noopener")
+        +svgMono('ic-telegram')
+  .s-vk-wall__list
+    each item in vkItems
+      a.s-vk-wall__item(href="", target="_blank", rel="noopener")
+        .s-vk-wall__item-inner
+          .s-vk-wall__item-content
+            .s-vk-wall__item-icon
+              +svgMono('ic-vk')
+            .s-vk-wall__item-description This week has seen many activities to celebrate Maslenitsa. Russian Curriculum staff have run workshops across the school, with the help of senior students.   On Monday, they learnt about the meaning of the holiday and traditions, and on Tuesday they learnt about traditional handicrafts. On Wednesday, students participated in traditional games and activities.   In Early Years, we ran 5 stations indoors, but once the sun came out, Year 3 to Year 6 went outside to celebrate.
+          .s-vk-wall__item-bg
+            img(src="https://sun9-13.userapi.com/impg/2X4aZ6SMI0h3uCt4l4jIMaZVLSoz6Fci4cwagg/om8E8rRDeYQ.jpg?size=604x403&quality=95&sign=1a4f539b2beca59c6cdec9341d1ca564&c_uniq_tag=ub9JblNmc7Iqg9A9TlT-6CZaMFnebo2bqeXrdAtrj5Q&type=album", alt="")

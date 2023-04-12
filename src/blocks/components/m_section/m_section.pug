@@ -1,5 +1,5 @@
 mixin section(className=false, titleSection=title, wide=false, titleH1=false)
-  section.m-section(class=className, class={'l-section--full' : wide})&attributes(attributes)
+  section.m-section(class=className, class={'m-section--full' : wide})&attributes(attributes)
     .m-section__wrapper.l-container(class=`${className}__wrapper`)
       if titleSection
         if titleH1

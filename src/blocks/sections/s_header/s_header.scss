@@ -1,9 +1,11 @@
 .s-header {
   z-index: 12;
   position: relative;
+  display: flex;
   height: rem(80);
   box-shadow: 0 rem(4) rem(12) hsla(0, 0%, 0%, 0.02);
   background-color: var(--color-white);
+  flex-direction: column;
   @include tr('all');
 
   &__burger {

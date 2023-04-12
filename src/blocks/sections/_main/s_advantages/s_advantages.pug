@@ -15,6 +15,6 @@
     each item in advantagesList
       .s-advantages__card
         .s-advantages__card-icon
-          img(src=item.icon, alt=title)
+          img(src=item.icon, alt=title, loading="lazy")
         .s-advantages__card-title.font-l.font-medium!= item.title
         .s-advantages__card-text.font-s!= item.text

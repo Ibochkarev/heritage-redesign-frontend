@@ -1,4 +1,7 @@
 .m-section {
+  display: flex;
+  flex-direction: column;
+
   &__wrapper {
     overflow: hidden;
     padding: rem(40) 0;
@@ -23,8 +26,7 @@
   }
 
   &--full &__wrapper {
-    @media (max-width: 1024px) {
-      margin: 0;
-    }
+    max-width: 100%;
+    margin: 0;
   }
 }
