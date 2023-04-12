@@ -1,0 +1,82 @@
+.s-teacher-info {
+  background-color: var(--color-white);
+
+  &__link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(24);
+    text-transform: uppercase;
+    gap: rem(12);
+    transition-duration: 0.4s;
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(40);
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(40);
+      height: rem(40);
+      background-color: var(--color-dark-gold);
+
+      svg {
+        font-size: rem(20);
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    gap: rem(24);
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      gap: rem(40);
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    max-width: 80%;
+
+    @media (min-width: 768px) {
+      max-width: rem(570);
+    }
+  }
+
+  &__title {
+    margin: 0 0 rem(12);
+  }
+
+  &__level {
+    margin-bottom: rem(20);
+    color: var(--color-black);
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(32);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: rem(12);
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(20);
+    }
+  }
+}

@@ -17,3 +17,5 @@ PageList:
     ready: 60
   - file: greetings.html
     ready: 30
+  - file: teacher.html
+    ready: 30

@@ -1,0 +1,14 @@
+extends  ../layouts/default
+
+block variables
+  - const title = "Виктория Бирюкова"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_teacher.css")
+
+block content
+  include ../../blocks/sections/_teacher/s_page_teacher/s_page_teacher.pug
+  include ../../blocks/sections/_teacher/s_teacher_info/s_teacher_info.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_campus.js")
