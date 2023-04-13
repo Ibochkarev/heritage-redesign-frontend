@@ -212,6 +212,7 @@
 
 .s-teacher-info__title {
   margin: 0 0 0.75rem;
+  color: var(--color-dark-blue);
 }
 
 .s-teacher-info__level {
