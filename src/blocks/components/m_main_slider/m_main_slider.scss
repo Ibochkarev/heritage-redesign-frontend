@@ -20,7 +20,7 @@
     }
 
     @media (min-width: 1024px) {
-      height: 100vh;
+      height: calc(100vh - 80px);
     }
   }
 
@@ -105,9 +105,9 @@
     flex-direction: column;
 
     &-content {
-      padding-bottom: rem(24);
-      position: relative;
       z-index: 2;
+      position: relative;
+      padding-bottom: rem(24);
 
       @media (min-width: 768px) {
         padding-bottom: rem(40);

@@ -1781,9 +1781,9 @@ section {
 }
 
 .m-main-slider__item-content {
-  padding-bottom: 1.5rem;
-  position: relative;
   z-index: 2;
+  position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .m-main-slider__item-text {
@@ -2498,7 +2498,7 @@ section {
   }
 
   .m-main-slider .swiper-container {
-    height: 100vh;
+    height: calc(100vh - 80px);
   }
 
   .m-main-slider__item-content {
