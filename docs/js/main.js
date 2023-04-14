@@ -155,18 +155,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/blocks/components/m_slider_section/m_slider_section.js":
-/*!********************************************************************!*\
-  !*** ./src/blocks/components/m_slider_section/m_slider_section.js ***!
-  \********************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nswiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"].use([swiper__WEBPACK_IMPORTED_MODULE_0__[\"Pagination\"], swiper__WEBPACK_IMPORTED_MODULE_0__[\"Navigation\"], swiper__WEBPACK_IMPORTED_MODULE_0__[\"Lazy\"]]);\nvar sliderSection = document.querySelectorAll(\".m-section-slider__list\");\nwindow.addEventListener(\"load\", function () {\n  sliderSection.forEach(function (el) {\n    new swiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"](el, {\n      slidesPerView: 1,\n      spaceBetween: 19,\n      centeredSlides: true,\n      navigation: {\n        nextEl: \".m-section-slider__list .m-section-slider__button-next\",\n        prevEl: \".m-section-slider__list .m-section-slider__button-prev\"\n      },\n      // lazy: true,\n      // loop: true,\n      resistance: true,\n      resistanceRatio: 1,\n      pagination: {\n        el: \".swiper-pagination\",\n        clickable: true,\n        type: \"bullets\"\n      },\n      breakpoints: {\n        0: {\n          centeredSlides: true,\n          slidesPerView: \"auto\",\n          spaceBetween: 18,\n          pagination: {\n            dynamicBullets: true\n          }\n        },\n        768: {\n          spaceBetween: 10\n        },\n        1024: {\n          slidesPerGroup: 4,\n          centeredSlides: false,\n          slidesPerView: 4,\n          spaceBetween: 20,\n          pagination: {\n            dynamicBullets: false\n          }\n        }\n      }\n    });\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/components/m_slider_section/m_slider_section.js?");
-
-/***/ }),
-
 /***/ "./src/blocks/sections/s_footer/s_footer.js":
 /*!**************************************************!*\
   !*** ./src/blocks/sections/s_footer/s_footer.js ***!
@@ -198,7 +186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vanilla-lazyload */ \"./node_modules/vanilla-lazyload/dist/lazyload.min.js\");\n/* harmony import */ var vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fancyapps/ui/dist/fancybox/fancybox.esm.js */ \"./node_modules/@fancyapps/ui/dist/fancybox/fancybox.esm.js\");\n/* harmony import */ var _components_m_slider_section_m_slider_section__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %components%/m_slider_section/m_slider_section */ \"./src/blocks/components/m_slider_section/m_slider_section.js\");\n\nvar lazyLoadInstance = new vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0___default.a({});\n\nwindow.Fancybox = _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"];\n_fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"].defaults.autoFocus = false;\n_fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"].bind();\n\n\n//# sourceURL=webpack:///./src/js/import/components.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vanilla-lazyload */ \"./node_modules/vanilla-lazyload/dist/lazyload.min.js\");\n/* harmony import */ var vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fancyapps/ui/dist/fancybox/fancybox.esm.js */ \"./node_modules/@fancyapps/ui/dist/fancybox/fancybox.esm.js\");\n\nvar lazyLoadInstance = new vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0___default.a({});\n\nwindow.Fancybox = _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"];\n_fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"].defaults.autoFocus = false;\n_fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"].bind();\n\n//# sourceURL=webpack:///./src/js/import/components.js?");
 
 /***/ }),
 
