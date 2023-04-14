@@ -2,11 +2,33 @@ extends  ../layouts/default
 
 block variables
   - const title = "Кампус Сокольники"
+  -
+    const mainSlidesData = [
+      {
+        type: 'image',
+        image: './img/demo/slider/1.jpeg',
+        title: '',
+        text: '',
+      },
+      {
+        type: 'image',
+        image: './img/demo/slider/2.jpeg',
+        title: 'Добро пожаловать<br> в Кампус Сокольники',
+        text: 'Какой то текст',
+      },
+      {
+        type: 'image',
+        image: './img/demo/slider/3.jpeg',
+        title: 'Слайдер 3 с заголовком',
+        text: '',
+      },
+    ]
 
 block append head
   link(rel="stylesheet" href="./styles/page_campus.css")
 
 block content
+  +main_slider(mainSlidesData)
   include ../../blocks/sections/_campus/s_campus_about/s_campus_about.pug
   include ../../blocks/sections/_campus/s_greetings/s_greetings.pug
   include ../../blocks/sections/_campus/s_studying/s_studying.pug

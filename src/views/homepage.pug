@@ -2,11 +2,33 @@ extends layouts/default
 
 block variables
   - const title = "Главная страница проекта"
+  -
+    const mainSlidesData = [
+      {
+        type: 'image',
+        image: './img/demo/slider/1.jpeg',
+        title: '',
+        text: '',
+      },
+      {
+        type: 'image',
+        image: './img/demo/slider/2.jpeg',
+        title: 'Добро пожаловать<br> в Кампус Сокольники',
+        text: 'Какой то текст',
+      },
+      {
+        type: 'image',
+        image: './img/demo/slider/3.jpeg',
+        title: 'Слайдер 3 с заголовком',
+        text: '',
+      },
+    ]
 
 block append head
   link(rel="stylesheet" href="./styles/page_main.css")
 
 block content
+  +main_slider(mainSlidesData)
   +m_quote_section('If a child cannot learn in the way we teach we must teach in a way the child can learn', './img/global/quote-bg-1.svg')
   include ../blocks/sections/_main/s_international_school/s_international_school.pug
   include ../blocks/sections/_main/s_campuses/s_campuses.pug

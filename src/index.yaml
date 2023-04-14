@@ -2,7 +2,7 @@ ProjectTitle: Heritage School
 
 PageList:
   - file: homepage.html
-    ready: 90
+    ready: 100
   - file: search.html
     ready: 100
   - file: 404.html
