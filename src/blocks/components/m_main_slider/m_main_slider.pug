@@ -11,8 +11,17 @@ mixin main_slider(slidesData=slidesData)
                     .m-main-slider__item-title.font-h1!= slide.title
                   if slide.text
                     .m-main-slider__item-text.font-xl.font-semibold!= slide.text
-            //- else
-            //-   .m-main-slider__item 2
+          else
+            .swiper-slide.m-main-slider__slide
+              .m-main-slider__video
+                video(autoplay, muted, loop)
+                  source(src=slide.src type="video/mp4")
+              .m-main-slider__item
+                .m-main-slider__item-content.l-container
+                  if slide.title
+                    .m-main-slider__item-title.font-h1!= slide.title
+                  if slide.text
+                    .m-main-slider__item-text.font-xl.font-semibold!= slide.text
       .m-main-slider__controls
         .m-main-slider__button.m-main-slider__button-prev
           <svg width="32" height="60" viewBox="0 0 32 60" fill="none" xmlns="http://www.w3.org/2000/svg">
