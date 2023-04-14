@@ -188,7 +188,7 @@
       &:not(:last-child) {
         margin-bottom: rem(8);
 
-        @media (min-width: 992px) {
+        @media (min-width: 1024px) {
           margin-bottom: rem(20);
         }
       }

@@ -762,6 +762,76 @@
   height: 0.25rem;
 }
 
+.s-campus-contact__inner {
+  display: -ms-grid;
+  display: grid;
+  gap: 2.5rem;
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.s-campus-contact__title {
+  margin-bottom: 2.5rem;
+  color: var(--color-dark-blue);
+}
+
+.s-campus-contact__info {
+  margin-bottom: 2.25rem;
+}
+
+.s-campus-contact__map iframe {
+  height: 33.125rem;
+}
+
+.s-campus-contact__right {
+  min-width: 0;
+}
+
+.s-campus-contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 0.75rem;
+}
+
+.s-campus-contact__item-icon {
+  width: 1.25rem;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+}
+
+.s-campus-contact__item-icon svg {
+  width: 100%;
+  height: auto;
+}
+
+.s-campus-contact__item-info span {
+  display: block;
+  color: var(--color-black);
+}
+
+.s-campus-contact__item-info a {
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.s-campus-contact__item-info a:hover {
+  color: var(--color-dark-gold);
+}
+
+.s-campus-contact__item-download {
+  display: block;
+  margin-top: 1.5rem;
+  font-weight: 400;
+  color: var(--color-dark-blue);
+}
+
 @media (min-width: 600px) {
   .s-cost__item-list--two {
     -ms-grid-columns: (1fr)[2];
@@ -898,6 +968,11 @@
   .s-teachers__button svg {
     width: 1.25rem;
   }
+
+  .s-campus-contact__inner {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 992px) {
@@ -927,10 +1002,6 @@
 
   .s-cost__item-icon {
     width: 2.25rem;
-  }
-
-  .s-cost__item-line:not(:last-child) {
-    margin-bottom: 1.25rem;
   }
 }
 
@@ -1024,6 +1095,41 @@
     padding: 3rem 3.5rem;
   }
 
+  .s-cost__item-line:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .s-campus-contact__inner {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .s-campus-contact__title {
+    margin-bottom: 5rem;
+  }
+
+  .s-campus-contact__info {
+    margin-bottom: 3.75rem;
+  }
+
+  .s-campus-contact__left {
+    grid-column: auto / span 2;
+  }
+
+  .s-campus-contact__right {
+    grid-column: auto / span 1;
+  }
+
+  .s-campus-contact__item {
+    gap: 0.875rem;
+  }
+
+  .s-campus-contact__item-icon {
+    width: 1.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
   .s-teachers__card-photo {
     margin-bottom: 2rem;
   }
@@ -1031,6 +1137,10 @@
   .s-teachers__card-photo img {
     width: 16.25rem;
     height: 16.25rem;
+  }
+
+  .s-campus-contact__inner {
+    gap: 6.25rem;
   }
 }
 

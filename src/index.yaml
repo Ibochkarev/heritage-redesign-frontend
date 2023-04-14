@@ -12,7 +12,7 @@ PageList:
   - file: covid.html
     ready: 100
   - file: campus.html
-    ready: 80
+    ready: 100
   - file: greetings.html
     ready: 100
   - file: teacher.html

@@ -747,11 +747,6 @@
 }
 
 @media (min-width: 1024px) {
-  .s-advantages__list {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .s-advantages__card {
     padding: 3rem;
   }
@@ -805,7 +800,14 @@
   }
 }
 
-@media (min-width: 1336px) {
+@media (min-width: 1200px) {
+  .s-advantages__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
   .s-advantages__list {
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
