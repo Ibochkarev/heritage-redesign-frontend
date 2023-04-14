@@ -449,8 +449,10 @@
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 .s-blog-articles__item-overlay {
@@ -553,6 +555,13 @@
   transition: all 0.4s ease;
 }
 
+.s-campuses__item:hover {
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
 .s-campuses__item:hover .s-campuses__item-overlay {
   background: rgba(240, 212, 198, 0.5) none repeat scroll 0 0;
 }
@@ -562,8 +571,8 @@
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .s-campuses__item-overlay {
@@ -575,9 +584,9 @@
   height: 100%;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(2, 17, 37, 0.6)), to(rgba(2, 17, 37, 0.6)));
   background: linear-gradient(0deg, rgba(2, 17, 37, 0.6), rgba(2, 17, 37, 0.6));
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   mix-blend-mode: multiply;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
 .s-campuses__item-image {

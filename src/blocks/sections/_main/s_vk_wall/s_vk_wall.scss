@@ -151,7 +151,6 @@
       width: 100%;
       height: 100%;
       transition: transform 0.5s linear;
-      transition: transform 0.5s linear, -webkit-transform 0.5s linear;
       content: '';
       will-change: transform;
 

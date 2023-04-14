@@ -57,7 +57,7 @@
       .s-blog-articles__item-image {
         overflow: hidden;
         transform: scale(1.05);
-        @include tr('all');
+        transition: transform 0.5s linear;
       }
     }
 

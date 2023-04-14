@@ -49,6 +49,8 @@
     }
 
     &:hover {
+      transition: transform 0.5s linear;
+
       .s-campuses__item-overlay {
         background: rgba(240,212,198,.5) none repeat scroll 0 0;
       }
@@ -56,7 +58,7 @@
       .s-campuses__item-image {
         overflow: hidden;
         transform: scale(1.05);
-        @include tr('all');
+        transition: all 0.5s linear;
       }
     }
 
@@ -68,8 +70,8 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(0deg, rgba(2, 17, 37, 0.6), rgba(2, 17, 37, 0.6));
+      transition: all 0.5s linear;
       mix-blend-mode: multiply;
-      @include tr('all');
     }
 
     &-image {

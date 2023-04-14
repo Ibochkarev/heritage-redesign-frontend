@@ -1,0 +1,129 @@
+-
+  var costList = [
+    {
+      name : "Pre - Nursery",
+      age: "2-3 года",
+      cost: "7,800 Евро в год"
+    },
+    {
+      name : "Nursery - Reception",
+      age: "3-5 лет",
+      cost: "12,800 Евро в год"
+    },
+    {
+      name : "Year 1 - Year 2",
+      age: "5-7 лет",
+      cost: "14,800 Евро в год"
+    },
+    {
+      name : "Year 3 - Year 6",
+      age: "7-10 лет",
+      cost: "15,800 Евро в год"
+    },
+    {
+      name : "Year 7 - Year 9",
+      age: "10-13 лет",
+      cost: "16,800 Евро в год"
+    },
+    {
+      name : "Year 10 - Year 13",
+      age: "14-18 лет",
+      cost: "17,800 Евро в год"
+    },
+  ]
+
+-
+  var incudedList = [
+    {
+      icon : "./img/cost/university.svg",
+      text: "Кембриджская программа"
+    },
+    {
+      icon : "./img/cost/russia.svg",
+      text: "Российская программа"
+    },
+    {
+      icon : "./img/cost/checklist.svg",
+      text: "Кембриджские экзамены и аттестация"
+    },
+    {
+      icon : "./img/cost/book.svg",
+      text: "Учебники и учебные материалы"
+    },
+    {
+      icon : "./img/cost/development.svg",
+      text: "Бесплатные развивающие клубы"
+    },
+    {
+      icon : "./img/cost/tablet.svg",
+      text: "Персональные Apple iPad"
+    },
+    {
+      icon : "./img/cost/restaurant.svg",
+      text: "Пятиразовое питание "
+    },
+    {
+      icon : "./img/cost/buildings.svg",
+      text: "Городские экскурсии "
+    },
+    {
+      icon : "./img/cost/psychologist.svg",
+      text: "Занятия с психологом и логопедом"
+    },
+  ]
+
+-
+  var extraList = [
+    {
+      icon : "./img/cost/school-uniform.svg",
+      text: "Школьная форма"
+    },
+    {
+      icon : "./img/cost/school-bus.svg",
+      text: "Школьный автобус"
+    },
+    {
+      icon : "./img/cost/paid-clubs.svg",
+      text: "Платные развивающие клубы"
+    },
+    {
+      icon : "./img/cost/evening-group.svg",
+      text: "Вечерняя дежурная группа"
+    },
+    {
+      icon : "./img/cost/summer-school.svg",
+      text: "Летняя школа"
+    },
+    {
+      icon : "./img/cost/international-travel.svg",
+      text: "Международные поездки"
+    },
+  ]
+
++section('s-cost', 'Стоимость обучения', false, false)
+  .s-cost__inner
+    .s-cost__top
+      each item in costList
+        a.s-cost__card(href="")
+          .s-cost__card-header
+            .s-cost__card-title.font-h4=item.name
+            .s-cost__card-age.font-l.font-light=item.age
+          .s-cost__card-footer
+            .s-cost__card-cost.font-xl.font-semibold=item.cost
+            .s-cost__card-more.font-s.font-medium читать подробнее
+      .s-cost__item.s-cost__item--included
+        .s-cost__item-title.font-xl.font-semibold Включено в стоимость:
+        .s-cost__item-list--two
+          each item in incudedList
+            .s-cost__item-line
+              .s-cost__item-icon
+                img(src=item.icon, alt="")
+              .s-cost__item-text.font-m.font-light=item.text
+      .s-cost__item.s-cost__item--extra
+        .s-cost__item-title.font-xl.font-semibold За дополнительную плату:
+        .s-cost__item-list
+          each item in extraList
+            .s-cost__item-line
+              .s-cost__item-icon
+                img(src=item.icon, alt="")
+              .s-cost__item-text.font-m.font-light=item.text

@@ -1,6 +1,6 @@
 .l {
   &-container {
-    width: auto;
+    width: -webkit-fill-available;
     max-width: rem(1620);
     margin: 0 rem(20);
 
@@ -12,9 +12,12 @@
       margin: 0 rem(40);
     }
 
+    @media (min-width: 1600px) {
+      margin: 0 auto;
+    }
+
     @media (min-width: 1920px) {
       width: 100%;
-      margin: 0 auto;
     }
   }
 

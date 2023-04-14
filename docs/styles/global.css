@@ -1350,7 +1350,7 @@ section {
 }
 
 .l-container {
-  width: auto;
+  width: -webkit-fill-available;
   max-width: 101.25rem;
   margin: 0 1.25rem;
 }
@@ -1632,6 +1632,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -2491,6 +2494,10 @@ section {
 }
 
 @media (min-width: 1600px) {
+  .l-container {
+    margin: 0 auto;
+  }
+
   .s-header__navigation-link {
     padding: 0 1.5625rem;
   }
@@ -2513,7 +2520,6 @@ section {
 @media (min-width: 1920px) {
   .l-container {
     width: 100%;
-    margin: 0 auto;
   }
 }
 
