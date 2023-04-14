@@ -1,0 +1,29 @@
+-
+  var campuses = [
+    {
+      title: 'Москва',
+      city: 'Кампус Сокольники',
+      image: './img/campuses/1.jpg',
+    },
+    {
+      title: 'Москва',
+      city: 'Кампус Ленинский',
+      image: './img/campuses/2.jpg',
+    },
+    {
+      title: 'Москва',
+      city: 'Кампус Тюмень',
+      image: './img/campuses/3.jpg',
+    }
+  ]
+
++section('s-campuses', 'Кампусы', true, false)
+  .s-campuses__list
+    each item in campuses
+      a.s-campuses__item(href="")
+        .s-campuses__item-overlay
+        img.s-campuses__item-image(src=item.image, alt="")
+        .s-campuses__item-content
+          .s-campuses__item-title.font-h2=item.title
+          .s-campuses__item-city.font-xl.font-semibold=item.city
+          +button('s-campuses__item-button', 'light-grey', 'button', 'Читать далее')

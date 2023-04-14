@@ -1,10 +1,8 @@
 ProjectTitle: Heritage School
 
 PageList:
-  - file: ui.html
-    ready: 20
   - file: homepage.html
-    ready: 70
+    ready: 90
   - file: search.html
     ready: 100
   - file: 404.html
@@ -16,6 +14,8 @@ PageList:
   - file: campus.html
     ready: 60
   - file: greetings.html
-    ready: 30
+    ready: 100
   - file: teacher.html
-    ready: 30
+    ready: 100
+  - file: ui.html
+    ready: 20
