@@ -1,0 +1,13 @@
+extends  ../layouts/default
+
+block variables
+  - const title = "Контакты"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_contacts.css")
+
+block content
+  include ../../blocks/sections/_contacts/s_page_contacts/s_page_contacts.pug
+
+block append scripts
+  script(defer src="./js/page_contacts.js")

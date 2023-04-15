@@ -23,6 +23,7 @@ module.exports = {
     page_search: './src/js/page_search.js',
     page_covid: './src/js/page_covid.js',
     page_campus: './src/js/page_campus.js',
+    page_contacts: './src/js/page_contacts.js',
   },
 
   output: {

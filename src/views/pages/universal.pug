@@ -1,0 +1,13 @@
+extends  ../layouts/default
+
+block variables
+  - const title = "COVID-19"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_universal.css")
+
+block content
+  include ../../blocks/sections/_covid/s_page_covid/s_page_covid.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_universal.js")

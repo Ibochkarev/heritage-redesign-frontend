@@ -17,5 +17,13 @@ PageList:
     ready: 100
   - file: teacher.html
     ready: 100
+  - file: contacts.html
+    ready: 10
+  - file: universal.html
+    ready: 10
+  - file: article.html
+    ready: 10
+  - file: cost.html
+    ready: 10
   - file: ui.html
     ready: 20
