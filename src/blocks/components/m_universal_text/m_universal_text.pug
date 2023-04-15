@@ -1,0 +1,7 @@
+mixin m_universal_content(title=title)
+  +section('m-universal-content', '', false, false)
+    if title
+      h2.m-universal-content__title.font-h2!= title
+    if block
+      .m-universal-content__text
+        block

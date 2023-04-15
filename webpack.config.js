@@ -24,6 +24,7 @@ module.exports = {
     page_covid: './src/js/page_covid.js',
     page_campus: './src/js/page_campus.js',
     page_contacts: './src/js/page_contacts.js',
+    page_universal: './src/js/page_universal.js',
   },
 
   output: {

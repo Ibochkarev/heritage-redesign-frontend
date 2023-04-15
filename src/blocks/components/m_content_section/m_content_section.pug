@@ -6,6 +6,8 @@ mixin m_content_section(className=false, title=title, image=image, reverse=false
       .m-content-section__info
         .l-container
           .m-content-section__information
-            h2.m-content-section__title.font-h2!= title
+            if title
+              h2.m-content-section__title.font-h2!= title
             if block
-              block
+              .m-content-section__content
+                block
