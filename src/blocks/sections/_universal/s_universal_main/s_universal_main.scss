@@ -1,0 +1,15 @@
+.s-universal-main {
+  text-align: center;
+
+  &__title {
+    margin-top: 0;
+    color: var(--color-dark-blue);
+  }
+
+  &__content {
+    max-width: rem(1120);
+    margin: 0 auto;
+    font-weight: 300;
+    @include font-m;
+  }
+}

@@ -1,0 +1,16 @@
+mixin slider_section(titleSection=title, slidesData=slidesData)
+  +section('s-universal-slider', titleSection)&attributes(attributes)
+    .s-universal-slider__list.swiper-container
+      .swiper-wrapper
+        each slide in slidesData
+          .swiper-slide.s-universal-slider__slide
+            img(src=slide.image, alt="")
+      .s-universal-slider__controls
+        .s-universal-slider__button.s-universal-slider__button-prev
+          <svg width="32" height="60" viewBox="0 0 32 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30.3509 0.0145187C31.071 0.013176 31.6559 0.596058 31.6572 1.31623C31.6578 1.66342 31.5199 1.99655 31.2741 2.24178L3.50686 30.0065L31.2741 57.771C31.784 58.2809 31.784 59.1075 31.2741 59.6175C30.7642 60.1274 29.9375 60.1274 29.4276 59.6175L0.739742 30.9296C0.230696 30.4204 0.230696 29.595 0.739742 29.0857L29.4276 0.397892C29.6721 0.152538 30.0044 0.0145187 30.3509 0.0145187Z" fill="#C49A6C"/>
+          </svg>
+        .s-universal-slider__button.s-universal-slider__button-next
+          <svg width="32" height="60" viewBox="0 0 32 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.66427 0.0145187C0.944098 0.013176 0.359257 0.596058 0.357912 1.31623C0.357301 1.66342 0.495199 1.99655 0.741042 2.24178L28.5083 30.0065L0.741042 57.771C0.23114 58.2809 0.23114 59.1075 0.741042 59.6175C1.25094 60.1274 2.07759 60.1274 2.5875 59.6175L31.2754 30.9296C31.7844 30.4204 31.7844 29.595 31.2754 29.0857L2.5875 0.397892C2.343 0.152538 2.01072 0.0145187 1.66427 0.0145187Z" fill="#C49A6C"/>
+          </svg>

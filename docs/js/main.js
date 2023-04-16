@@ -167,6 +167,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 
 /***/ }),
 
+/***/ "./src/blocks/sections/_universal/s_universal_slider/s_universal_slider.js":
+/*!*********************************************************************************!*\
+  !*** ./src/blocks/sections/_universal/s_universal_slider/s_universal_slider.js ***!
+  \*********************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nswiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"].use([swiper__WEBPACK_IMPORTED_MODULE_0__[\"Navigation\"], swiper__WEBPACK_IMPORTED_MODULE_0__[\"Lazy\"]]);\nvar sliderSection = document.querySelectorAll('.s-universal-slider__list');\nwindow.addEventListener('load', function () {\n  sliderSection.forEach(function (el) {\n    new swiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"](el, {\n      slidesPerView: 1,\n      spaceBetween: 12,\n      navigation: {\n        nextEl: '.s-universal-slider__list .s-universal-slider__button-next',\n        prevEl: '.s-universal-slider__list .s-universal-slider__button-prev'\n      },\n      lazy: true,\n      loop: true,\n      resistance: true,\n      resistanceRatio: 1,\n      breakpoints: {\n        575: {\n          slidesPerView: 2\n        },\n        992: {\n          slidesPerView: 2,\n          spaceBetween: 32\n        }\n      }\n    });\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/sections/_universal/s_universal_slider/s_universal_slider.js?");
+
+/***/ }),
+
 /***/ "./src/blocks/sections/s_footer/s_footer.js":
 /*!**************************************************!*\
   !*** ./src/blocks/sections/s_footer/s_footer.js ***!
@@ -210,7 +222,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vani
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_s_header_s_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/s_header/s_header */ \"./src/blocks/sections/s_header/s_header.js\");\n/* harmony import */ var _sections_s_footer_s_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %sections%/s_footer/s_footer */ \"./src/blocks/sections/s_footer/s_footer.js\");\n/* harmony import */ var _sections_s_footer_s_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sections_s_footer_s_footer__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/js/import/sections.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_s_header_s_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/s_header/s_header */ \"./src/blocks/sections/s_header/s_header.js\");\n/* harmony import */ var _sections_s_footer_s_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %sections%/s_footer/s_footer */ \"./src/blocks/sections/s_footer/s_footer.js\");\n/* harmony import */ var _sections_s_footer_s_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sections_s_footer_s_footer__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _sections_universal_s_universal_slider_s_universal_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %sections%/_universal/s_universal_slider/s_universal_slider */ \"./src/blocks/sections/_universal/s_universal_slider/s_universal_slider.js\");\n\n\n\n\n//# sourceURL=webpack:///./src/js/import/sections.js?");
 
 /***/ }),
 
