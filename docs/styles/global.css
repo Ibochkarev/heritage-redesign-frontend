@@ -1918,6 +1918,13 @@ section {
   flex-wrap: wrap;
 }
 
+.m-content-section__wrapper--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
 .m-content-section__image {
   position: relative;
   display: -ms-grid;
@@ -2632,13 +2639,6 @@ section {
   .m-content-section__wrapper {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-  }
-
-  .m-content-section__wrapper--reverse {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
   }
 
   .m-content-section__title {

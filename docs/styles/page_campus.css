@@ -511,14 +511,21 @@
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 
-.s-studying__title {
+.s-studying__content-wrap h2 {
   margin: 0 0 1rem;
+  font-weight: 500;
   color: var(--color-black);
+  font-family: 'Lora';
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
-.s-studying__list {
+.s-studying__content-wrap ul {
   margin: 0;
   padding-left: 1rem;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .s-cost {
@@ -913,7 +920,7 @@
     padding: 5rem 1.5rem 5rem 5rem;
   }
 
-  .s-studying__title {
+  .s-studying__content-wrap h2 {
     margin: 0 0 2.5rem;
   }
 
@@ -1062,6 +1069,16 @@
   .font-menu {
     font-size: 1rem;
     line-height: 1.375rem;
+  }
+
+  .s-studying__content-wrap h2 {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+  }
+
+  .s-studying__content-wrap ul {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

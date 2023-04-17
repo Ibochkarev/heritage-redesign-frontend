@@ -113,19 +113,25 @@
     @media (min-width: 768px) {
       padding: rem(80) rem(24) rem(80) rem(80);
     }
-  }
 
-  &__title {
-    margin: 0 0 rem(16);
-    color: var(--color-black);
+    &-wrap {
+      h2 {
+        margin: 0 0 rem(16);
+        font-weight: 500;
+        color: var(--color-black);
+        @include font-xl;
 
-    @media (min-width: 768px) {
-      margin: 0 0 rem(40);
+        @media (min-width: 768px) {
+          margin: 0 0 rem(40);
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding-left: rem(16);
+        font-weight: 300;
+        @include font-m;
+      }
     }
-  }
-
-  &__list {
-    margin: 0;
-    padding-left: rem(16);
   }
 }

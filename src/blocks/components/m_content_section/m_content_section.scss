@@ -13,9 +13,7 @@
     }
 
     &--reverse {
-      @media (min-width: 768px) {
-        flex-direction: row-reverse;
-      }
+      flex-direction: row-reverse;
 
       .m-content-section__information {
         @media (min-width: 1024px) {
