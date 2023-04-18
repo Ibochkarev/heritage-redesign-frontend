@@ -1,10 +1,5 @@
 .s-share-block {
-  margin-bottom: rem(16);
   background-color: var(--color-white);
-
-  @media (min-width: 1024px) {
-    margin-bottom: rem(80);
-  }
 
   &__title {
     max-width: rem(700);

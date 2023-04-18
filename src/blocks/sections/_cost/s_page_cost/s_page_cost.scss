@@ -1,0 +1,44 @@
+.s-page-cost {
+  .s-page__title {
+    text-align: center;
+  }
+
+  .m-section__wrapper {
+    width: 100%;
+    padding: rem(24) 0;
+
+    @media (min-width: 1440px) {
+      padding: rem(40) 0;
+    }
+  }
+
+  &__tabs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: rem(16);
+
+    @media (min-width: 575px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__card-content {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}

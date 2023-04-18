@@ -1,10 +1,4 @@
 .s-subscribe {
-  margin-bottom: rem(16);
-
-  @media (min-width: 1024px) {
-    margin-bottom: rem(80);
-  }
-
   &__wrapper {
     display: flex;
     align-items: center;

@@ -1236,7 +1236,7 @@ button.swiper-pagination-bullet {
 }
 
 body {
-  font-family: HelveticaNeueCyr, sans-serif;
+  font-family: "HelveticaNeueCyr", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: var(--color-dark);
@@ -2085,7 +2085,7 @@ section {
 .m-universal-content__text {
   max-width: 70rem;
   margin: 0 auto;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.75rem;
   line-height: 1rem;
 }
@@ -2111,8 +2111,15 @@ section {
   line-height: 1.375rem;
 }
 
+.m-universal-content__text ul,
+.m-universal-content__text ol {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .m-universal-content__text b,
 .m-universal-content__text strong {
+  font-weight: 700;
   color: var(--color-black);
 }
 
@@ -2131,6 +2138,33 @@ section {
 .m-universal-content__text img {
   width: 100%;
   height: auto;
+}
+
+.m-universal-content__text table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0.0625rem solid #ccc;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.m-universal-content__text table tr {
+  padding: .35em;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+.m-universal-content__text table th,
+.m-universal-content__text table td {
+  padding: .625em;
+  text-align: center;
+}
+
+.m-universal-content__text table th {
+  font-size: .85em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
 .s-header {
@@ -2798,6 +2832,12 @@ section {
     line-height: 3rem;
   }
 
+  .m-universal-content__text ul,
+  .m-universal-content__text ol {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .s-footer__title {
     font-size: 1rem;
     line-height: 1.375rem;
@@ -2982,10 +3022,6 @@ section {
 }
 
 @media (min-width: 1600px) {
-  .l-container {
-    margin: 0 auto;
-  }
-
   .s-header__navigation-link {
     padding: 0 1.5625rem;
   }
@@ -3007,6 +3043,7 @@ section {
 
 @media (min-width: 1920px) {
   .l-container {
+    margin: 0 auto;
     width: 100%;
   }
 }
@@ -3052,6 +3089,50 @@ section {
 @media (max-width: 767px) {
   .s-footer__column--contacts {
     grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .m-universal-content__text table {
+    border: 0;
+  }
+
+  .m-universal-content__text table thead {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: none;
+    clip: rect(0 0 0 0);
+  }
+
+  .m-universal-content__text table tr {
+    display: block;
+    margin-bottom: .625em;
+    border-bottom: 3px solid #ddd;
+  }
+
+  .m-universal-content__text table td {
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .m-universal-content__text table td::before {
+    font-weight: bold;
+    text-transform: uppercase;
+    /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+    content: attr(data-label);
+    float: left;
+  }
+
+  .m-universal-content__text table td:last-child {
+    border-bottom: 0;
   }
 }
 

@@ -20,9 +20,9 @@ PageList:
   - file: contacts.html
     ready: 100
   - file: universal.html
-    ready: 70
+    ready: 100
   - file: article.html
-    ready: 10
+    ready: 100
   - file: cost.html
     ready: 10
   - file: ui.html

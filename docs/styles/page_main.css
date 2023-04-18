@@ -167,7 +167,6 @@
 
 .s-international-school__text {
   margin-bottom: 1.5rem;
-  text-align: center;
 }
 
 .s-international-school__button {
@@ -535,6 +534,7 @@
 .s-campuses__item {
   overflow: hidden;
   position: relative;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,6 +553,10 @@
   flex-direction: column;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.s-campuses__item.is-active {
+  border-bottom: 0.3125rem solid var(--color-dark-gold);
 }
 
 .s-campuses__item:hover {

@@ -27,14 +27,9 @@
   }
 
   &__content {
-    margin-bottom: rem(40);
     font-weight: 300;
     color: var(--color-black);
     @include font-m;
-
-    @media (min-width: 1024px) {
-      margin-bottom: rem(80);
-    }
 
     img {
       width: 100%;
