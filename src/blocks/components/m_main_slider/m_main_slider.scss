@@ -1,4 +1,8 @@
 .m-main-slider {
+  &__wrapper.l-container {
+    max-width: 100%;
+  }
+
   &__list {
     position: relative;
     max-width: rem(2560);

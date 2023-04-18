@@ -1,13 +1,16 @@
 extends  ../layouts/default
 
 block variables
-  - const title = "COVID-19"
+  - const title = "Статья"
 
 block append head
   link(rel="stylesheet" href="./styles/page_article.css")
 
 block content
-  include ../../blocks/sections/_covid/s_page_covid/s_page_covid.pug
+  include ../../blocks/sections/_article/s_page_article/s_page_article.pug
+  include ../../blocks/sections/_article/s_subscribe/s_subscribe.pug
+  include ../../blocks/sections/_article/s_share_block/s_share_block.pug
+  include ../../blocks/sections/_article/s_related/s_related.pug
 
 block append scripts
   script(defer src="./js/page_article.js")

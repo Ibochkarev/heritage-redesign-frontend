@@ -1,0 +1,45 @@
+.s-share-block {
+  margin-bottom: rem(16);
+  background-color: var(--color-white);
+
+  @media (min-width: 1024px) {
+    margin-bottom: rem(80);
+  }
+
+  &__title {
+    max-width: rem(700);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(24);
+    flex-direction: column;
+
+    @media (min-width: 1024px) {
+      justify-content: flex-start;
+      gap: rem(40);
+      flex-direction: row;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+  }
+
+  &__link {
+    cursor: pointer;
+
+    svg {
+      font-size: rem(37);
+      transition-duration: 0.4s;
+    }
+
+    &:hover svg{
+      fill: var(--color-dark-blue);
+    }
+  }
+}

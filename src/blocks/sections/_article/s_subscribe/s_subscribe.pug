@@ -1,0 +1,20 @@
+
++section('s-subscribe', '', false, true)
+  .s-subscribe__info
+    .s-subscribe__title.font-xl.font-medium Хотите получать полезный контент про воспитание и обучение детей?
+    .s-subscribe__text.font-m.font-light Подпишитесь на нашу рассылку (без спама и рекламы)
+  form.s-subscribe__form(action="subscribe")
+    .subscribe__form-item
+      label.s-subscribe__label
+        input.s-subscribe__input(type="text", name="name", placeholder="Введите свое имя")
+    .subscribe__form-item
+      label.s-subscribe__label
+        input.s-subscribe__input(type="text", name="name", placeholder="Ваш e-mail")
+    .subscribe__form-item
+      +button('s-subscribe__button', 'light-grey', 'button', 'Отправить / Send')
+    .s-subscribe__terms
+      .s-subscribe__terms-col
+        input#terms(type="checkbox" name="terms")
+        label(for="terms")
+      .s-subscribe__terms-col
+        a.s-subscribe__terms-text.font-m.font-light(href="#") Я согласен с условиями обработки персональных данных

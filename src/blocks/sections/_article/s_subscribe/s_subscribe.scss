@@ -1,0 +1,130 @@
+.s-subscribe {
+  margin-bottom: rem(16);
+
+  @media (min-width: 1024px) {
+    margin-bottom: rem(80);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:rem(24);
+
+    @media (min-width: 992px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(12);
+
+    @media (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: rem(12);
+
+    @media (min-width: 1440px) {
+      display: grid;
+      gap: rem(24);
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__label {
+    width: 100%;
+  }
+
+  &__input {
+    width: -webkit-fill-available;
+    height: rem(40);
+    padding: 0 rem(24);
+    font-weight: 300;
+    line-height: rem(40);
+    color: var(--color-black);
+    border: 0;
+    background-color: var(--color-white);
+    @include font-m;
+
+    @media (min-width: 1024px) {
+      height: rem(52);
+      line-height: rem(52);
+    }
+
+    &::placeholder {
+      color: var(--color-grey);
+      @include font-m;
+    }
+  }
+
+  &__button {
+    margin-bottom: rem(24);
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__terms {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+
+    @media (min-width: 1024px) {
+      grid-column: 1/-1;
+      gap: rem(18);
+    }
+
+    &-text {
+      text-decoration: underline;
+    }
+
+    input {
+      cursor: pointer;
+      display: none;
+      width: initial;
+      height: initial;
+      margin-bottom: 0;
+      padding: 0;
+
+      &:checked + label:after {
+        position: absolute;
+        top: rem(-2);
+        left: rem(11);
+        display: block;
+        width: rem(6);
+        height: rem(14);
+        border: solid #C49A6C;
+        transform: rotate(45deg);
+        content: '';
+        border-width: 0 rem(2) rem(2) 0;
+      }
+    }
+
+    label {
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        width: rem(10);
+        height: rem(10);
+        padding: rem(10);
+        content:'';
+        -webkit-appearance: none;
+        background-color: #fff;
+        vertical-align: middle;
+      }
+    }
+  }
+}

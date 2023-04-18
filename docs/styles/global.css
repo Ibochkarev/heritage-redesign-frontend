@@ -1699,6 +1699,10 @@ section {
   margin: 0;
 }
 
+.m-main-slider__wrapper.l-container {
+  max-width: 100%;
+}
+
 .m-main-slider__list {
   position: relative;
   max-width: 160rem;
@@ -2820,10 +2824,6 @@ section {
     padding: 0 1.75rem;
   }
 
-  .m-section__title {
-    margin: 0 auto 5rem;
-  }
-
   .m-main-slider .swiper-container {
     height: calc(100vh - 80px);
   }
@@ -2957,6 +2957,10 @@ section {
 
   .m-section__wrapper {
     padding: 6.875rem 0;
+  }
+
+  .m-section__title {
+    margin: 0 auto 5rem;
   }
 
   .m-breadcrumbs {

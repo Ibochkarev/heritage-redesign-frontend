@@ -8,12 +8,25 @@
       margin: 0 rem(30);
     }
 
+    // @media (min-width: 992px) {
+    //   max-width: rem(940);
+    // }
+
     @media (min-width: 1024px) {
       margin: 0 rem(40);
     }
 
+    // @media (min-width: 1200px) {
+    //   max-width: rem(1100);
+    // }
+
+    // @media (min-width: 1400px) {
+    //   max-width: rem(1340);
+    // }
+
     @media (min-width: 1600px) {
       margin: 0 auto;
+      // max-width: rem(1560);
     }
 
     @media (min-width: 1920px) {
