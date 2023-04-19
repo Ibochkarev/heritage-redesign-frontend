@@ -4,7 +4,12 @@
   font-weight: 500;
   line-height: rem(24);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(48);
+    line-height: rem(48);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(76);
     font-weight: 400;
     line-height: rem(88);
@@ -17,7 +22,12 @@
   font-weight: 500;
   line-height: rem(24);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(48);
+    line-height: rem(48);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(76);
     font-weight: 400;
     line-height: rem(88);
@@ -30,7 +40,12 @@
   font-weight: 500;
   line-height: rem(24);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(44);
+    line-height: rem(44);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-family: 'Lora';
     font-size: rem(48);
     line-height: rem(56);
@@ -43,7 +58,12 @@
   font-weight: 500;
   line-height: rem(24);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(44);
+    line-height: rem(44);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-family: 'Lora';
     font-size: rem(48);
     line-height: rem(56);
@@ -56,7 +76,12 @@
   font-weight: 500;
   line-height: rem(24);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(40);
+    line-height: rem(40);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(42);
     line-height: rem(52);
   }
@@ -68,7 +93,12 @@
   font-weight: 500;
   line-height: rem(24);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(40);
+    line-height: rem(40);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(42);
     line-height: rem(52);
   }
@@ -80,7 +110,12 @@
   font-weight: 500;
   line-height: rem(22);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(36);
+    line-height: rem(44);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(40);
     font-weight: 400;
     line-height: rem(48);
@@ -93,7 +128,12 @@
   font-weight: 500;
   line-height: rem(22);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(36);
+    line-height: rem(44);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(40);
     font-weight: 400;
     line-height: rem(48);
@@ -105,7 +145,12 @@
   font-size: rem(16);
   line-height: rem(20);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(24);
+    line-height: rem(30);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(30);
     line-height: rem(40);
   }
@@ -116,7 +161,12 @@
   font-size: rem(16);
   line-height: rem(20);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(24);
+    line-height: rem(30);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(30);
     line-height: rem(40);
   }
@@ -126,7 +176,12 @@
   font-size: rem(14);
   line-height: rem(18);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(21);
+    line-height: rem(27);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(24);
     line-height: rem(32);
   }
@@ -136,7 +191,12 @@
   font-size: rem(14);
   line-height: rem(18);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(21);
+    line-height: rem(27);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(24);
     line-height: rem(32);
   }
@@ -146,7 +206,12 @@
   font-size: rem(12);
   line-height: rem(16);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(18);
+    line-height: rem(24);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(20);
     line-height: rem(28);
   }
@@ -156,7 +221,12 @@
   font-size: rem(12);
   line-height: rem(16);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(18);
+    line-height: rem(24);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(20);
     line-height: rem(28);
   }
@@ -166,7 +236,12 @@
   font-size: rem(10);
   line-height: rem(14);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(15);
+    line-height: rem(21);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(16);
     line-height: rem(22);
   }
@@ -176,7 +251,12 @@
   font-size: rem(10);
   line-height: rem(14);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(15);
+    line-height: rem(21);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(16);
     line-height: rem(22);
   }
@@ -185,28 +265,23 @@
 .font-xs {
   font-size: rem(14);
   line-height: rem(20);
-
-  @media screen and (min-width: 1024px) {
-    font-size: rem(14);
-    line-height: rem(20);
-  }
 }
 
 @mixin font-xs {
   font-size: rem(14);
   line-height: rem(20);
-
-  @media screen and (min-width: 1024px) {
-    font-size: rem(14);
-    line-height: rem(20);
-  }
 }
 
 .font-button {
   font-size: rem(12);
   line-height: rem(14);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(14);
+    line-height: rem(16);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(16);
     line-height: rem(20);
   }
@@ -216,7 +291,12 @@
   font-size: rem(12);
   line-height: rem(14);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(14);
+    line-height: rem(16);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(16);
     line-height: rem(20);
   }
@@ -227,7 +307,12 @@
   font-size: rem(12);
   line-height: rem(16);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(14);
+    line-height: rem(16);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(16);
     line-height: rem(22);
   }
@@ -238,7 +323,12 @@
   font-size: rem(12);
   line-height: rem(16);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: rem(14);
+    line-height: rem(16);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: rem(16);
     line-height: rem(22);
   }

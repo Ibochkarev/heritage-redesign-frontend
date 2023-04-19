@@ -1,12 +1,21 @@
 .s-footer {
   display: flex;
+  justify-content: center;
   padding: rem(40) 0;
   color: var(--color-white);
   flex-direction: column;
   background-color: var(--color-dark-blue);
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding: rem(60) 0;
+  }
+
+  @media screen and (min-width: 1440px) {
     padding: rem(80) 0;
+  }
+
+  .l-container {
+    margin: 0 auto;
   }
 
   &__content {

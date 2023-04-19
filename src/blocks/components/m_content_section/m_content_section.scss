@@ -16,8 +16,14 @@
       flex-direction: row-reverse;
 
       .m-content-section__information {
-        @media (min-width: 1024px) {
-          padding-right: 0;
+
+        @media screen and (min-width: 1024px) {
+          padding-right: rem(60);
+          padding-left: rem(60);
+        }
+
+        @media screen and (min-width: 1440px) {
+          padding-right: rem(80);
           padding-left: rem(80);
         }
       }
@@ -65,10 +71,12 @@
     padding-top: rem(32);
     padding-bottom: rem(32);
 
-    @media (min-width: 1024px) {
-      padding-top: rem(100);
-      padding-bottom: rem(100);
-      padding-left: rem(80);
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+      padding: rem(60);
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: rem(100) rem(80);
     }
   }
 
@@ -82,7 +90,7 @@
   }
 
   &__content {
-    font-weight: 400;
+    font-weight: 300;
     @include font-m;
 
     h2 {
@@ -97,16 +105,14 @@
       @include font-h4;
     }
 
-    ul {}
-
-    ol {}
-
     b, strong {
+      font-family: 'Lora';
+      font-weight: 700;
       color: var(--color-black);
     }
 
     a {
-      cursor: poiner;
+      cursor: pointer;
       text-decoration: underline;
       color: var(--color-dark-gold);
       transition-duration: 0.4s;

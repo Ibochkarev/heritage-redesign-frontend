@@ -72,12 +72,13 @@
     }
 
     b, strong {
+      font-family: 'Lora';
       font-weight: 700;
       color: var(--color-black);
     }
 
     a {
-      cursor: poiner;
+      cursor: pointer;
       text-decoration: underline;
       color: var(--color-dark-gold);
       transition-duration: 0.4s;

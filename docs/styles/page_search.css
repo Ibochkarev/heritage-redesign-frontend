@@ -278,7 +278,37 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .s-page-search__form {
+    margin-top: 2.5rem;
+  }
+
+  .s-page-search__form-input {
+    width: 100%;
+    height: 4.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .s-page-search__form-clear {
+    right: 2rem;
+  }
+
+  .s-page-search__form-button {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .s-page-search__form-button .ico {
+    font-size: 2rem;
+  }
+
+  .s-page-search__not-found {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .font-h1 {
     font-size: 4.75rem;
     font-weight: 400;
@@ -322,11 +352,6 @@
     line-height: 1.375rem;
   }
 
-  .font-xs {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .font-button {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -335,36 +360,6 @@
   .font-menu {
     font-size: 1rem;
     line-height: 1.375rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .s-page-search__form {
-    margin-top: 2.5rem;
-  }
-
-  .s-page-search__form-input {
-    width: 100%;
-    height: 4.5rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
-
-  .s-page-search__form-clear {
-    right: 2rem;
-  }
-
-  .s-page-search__form-button {
-    width: 4.5rem;
-    height: 4.5rem;
-  }
-
-  .s-page-search__form-button .ico {
-    font-size: 2rem;
-  }
-
-  .s-page-search__not-found {
-    padding: 1.5rem;
   }
 }
 
@@ -379,6 +374,58 @@
 
   .m-search-card {
     padding: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .font-h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .font-h2 {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+
+  .font-h3 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .font-h4 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  .font-xl {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+
+  .font-l {
+    font-size: 1.3125rem;
+    line-height: 1.6875rem;
+  }
+
+  .font-m {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .font-s {
+    font-size: 0.9375rem;
+    line-height: 1.3125rem;
+  }
+
+  .font-button {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .font-menu {
+    font-size: 0.875rem;
+    line-height: 1rem;
   }
 }
 

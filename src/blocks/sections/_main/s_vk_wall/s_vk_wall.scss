@@ -16,8 +16,12 @@
     margin: 0 auto rem(40);
     text-align: center;
 
-    @media (min-width: 1024px) {
-      margin: 0 auto rem(110);
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+      margin: 0 auto rem(60);
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: 0 auto rem(80);
     }
 
     &-title {

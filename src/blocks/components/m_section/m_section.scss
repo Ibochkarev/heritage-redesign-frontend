@@ -1,13 +1,18 @@
 .m-section {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 
   &__wrapper {
     overflow: hidden;
     padding: rem(40) 0;
 
-    @media (min-width: 1440px) {
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+      padding: rem(80) 0;
+    }
+
+    @media screen and (min-width: 1440px) {
       padding: rem(110) 0;
     }
   }
@@ -21,7 +26,11 @@
       margin: 0 auto rem(40);
     }
 
-    @media (min-width: 1440px) {
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+      margin: 0 auto rem(60);
+    }
+
+    @media screen and (min-width: 1440px) {
       margin: 0 auto rem(80);
     }
   }

@@ -690,7 +690,60 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .s-advantages__card {
+    padding: 3rem;
+  }
+
+  .s-advantages__card-icon {
+    margin-bottom: 1.25rem;
+  }
+
+  .s-advantages__card-icon img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .s-advantages__card-title {
+    margin-bottom: 1rem;
+  }
+
+  .s-advantages__card-text {
+    margin-bottom: 1rem;
+  }
+
+  .s-vk-wall .m-section__title {
+    margin-bottom: 3.75rem;
+  }
+
+  .s-vk-wall__social-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .s-blog-articles__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 5rem;
+  }
+
+  .s-blog-articles__item {
+    min-height: 35.625rem;
+  }
+
+  .s-campuses__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .s-advantages__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .font-h1 {
     font-size: 4.75rem;
     font-weight: 400;
@@ -734,11 +787,6 @@
     line-height: 1.375rem;
   }
 
-  .font-xs {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .font-button {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -748,66 +796,13 @@
     font-size: 1rem;
     line-height: 1.375rem;
   }
-}
-
-@media (min-width: 1024px) {
-  .s-advantages__card {
-    padding: 3rem;
-  }
-
-  .s-advantages__card-icon {
-    margin-bottom: 1.25rem;
-  }
-
-  .s-advantages__card-icon img {
-    width: 4.5rem;
-    height: 4.5rem;
-  }
-
-  .s-advantages__card-title {
-    margin-bottom: 1rem;
-  }
-
-  .s-advantages__card-text {
-    margin-bottom: 1rem;
-  }
-
-  .s-vk-wall .m-section__title {
-    margin-bottom: 3.75rem;
-  }
 
   .s-vk-wall__social {
-    margin: 0 auto 6.875rem;
-  }
-
-  .s-vk-wall__social-title {
-    margin-bottom: 1.5rem;
-  }
-
-  .s-blog-articles__list {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 5rem;
-  }
-
-  .s-blog-articles__item {
-    min-height: 35.625rem;
-  }
-
-  .s-campuses__list {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto 5rem;
   }
 
   .s-campuses__item {
     min-height: 35.625rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .s-advantages__list {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -816,6 +811,66 @@
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .font-h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .font-h2 {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+
+  .font-h3 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .font-h4 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  .font-xl {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+
+  .font-l {
+    font-size: 1.3125rem;
+    line-height: 1.6875rem;
+  }
+
+  .font-m {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .font-s {
+    font-size: 0.9375rem;
+    line-height: 1.3125rem;
+  }
+
+  .font-button {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .font-menu {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .s-vk-wall__social {
+    margin: 0 auto 3.75rem;
+  }
+
+  .s-campuses__item {
+    min-height: 26.25rem;
   }
 }
 

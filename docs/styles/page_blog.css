@@ -375,7 +375,13 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .m-blog-card__image {
+    max-height: 17.625rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .font-h1 {
     font-size: 4.75rem;
     font-weight: 400;
@@ -419,11 +425,6 @@
     line-height: 1.375rem;
   }
 
-  .font-xs {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .font-button {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -435,15 +436,61 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .m-blog-card__image {
-    max-height: 17.625rem;
-  }
-}
-
 @media (min-width: 1440px) {
   .s-page-blog__items {
     gap: 6.875rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .font-h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .font-h2 {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+
+  .font-h3 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .font-h4 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  .font-xl {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+
+  .font-l {
+    font-size: 1.3125rem;
+    line-height: 1.6875rem;
+  }
+
+  .font-m {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .font-s {
+    font-size: 0.9375rem;
+    line-height: 1.3125rem;
+  }
+
+  .font-button {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .font-menu {
+    font-size: 0.875rem;
+    line-height: 1rem;
   }
 }
 
