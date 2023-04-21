@@ -80,4 +80,10 @@
       margin-bottom: rem(20);
     }
   }
+
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
 }

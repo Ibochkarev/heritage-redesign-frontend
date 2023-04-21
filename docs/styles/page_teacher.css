@@ -224,6 +224,10 @@
   margin-bottom: 0.75rem;
 }
 
+.s-teacher-info__description:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
   .s-teacher-info__link {
     margin-bottom: 2.5rem;

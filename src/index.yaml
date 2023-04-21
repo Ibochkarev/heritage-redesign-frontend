@@ -24,6 +24,6 @@ PageList:
   - file: article.html
     ready: 100
   - file: cost.html
-    ready: 10
+    ready: 100
   - file: ui.html
-    ready: 20
+    ready: 100

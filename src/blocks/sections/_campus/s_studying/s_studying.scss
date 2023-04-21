@@ -115,6 +115,15 @@
     }
 
     &-wrap {
+      font-weight: 300;
+      @include font-m;
+
+      b, strong {
+        font-family: 'Lora';
+        font-weight: 700;
+        color: var(--color-black);
+      }
+
       h2 {
         margin: 0 0 rem(16);
         font-weight: 500;

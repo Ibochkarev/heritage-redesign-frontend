@@ -1,10 +1,6 @@
 .m-breadcrumbs {
   margin-bottom: rem(24);
 
-  @media (min-width: 1440px) {
-    margin-bottom: rem(40);
-  }
-
   &__item {
     display: inline-block;
     vertical-align: top;

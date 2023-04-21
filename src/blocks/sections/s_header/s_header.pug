@@ -50,18 +50,23 @@ header.s-header
     .s-header__wrapper
       .s-header__nav-wrap
         button.s-header__burger(type="button" aria-label="Меню" title="Меню")
-          +svgMono("ic-menu")
-          +svgMono("ic-close")
-        ul.s-header__navigation
-          each itemMenu in headerLeftMenu
-            li.s-header__navigation-item
-              a.s-header__navigation-link.font-menu(href=itemMenu.link, aria-label=itemMenu.title, title=itemMenu.title)
-                span= itemMenu.title
-              if itemMenu.subMenu
-                ul.s-header__submenu
-                  each item in itemMenu.subMenu
-                    li.s-header__submenu-item
-                      a.s-header__submenu-link.font-s.font-light(href=item.link)= item.title
+          <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="ic-menu">
+            <path d="M0.0552464 1.89575H33.9463M0.0546875 18.1045H33.9457M0.0546875 10.0001H17.0002" stroke="#041E42" stroke-width="2"/>
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="ic-close">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.540265 0.540569C0.793988 0.286611 1.20555 0.28642 1.4595 0.540143L10.0001 9.07279L18.5406 0.540145C18.7946 0.286422 19.2061 0.286613 19.4599 0.540571C19.7136 0.79453 19.7134 1.20609 19.4594 1.45981L10.9114 9.99994L19.4595 18.5401C19.7135 18.7939 19.7137 19.2054 19.4599 19.4594C19.2062 19.7133 18.7947 19.7135 18.5407 19.4598L10.0001 10.9272L1.45957 19.4598C1.20561 19.7135 0.79405 19.7133 0.540327 19.4594C0.286604 19.2054 0.286795 18.7939 0.540754 18.5401L9.08881 10L0.540691 1.45981C0.286733 1.20608 0.286542 0.794528 0.540265 0.540569Z" fill="#041E42"/>
+          </svg>
+        nav.s-header__nav
+          ul.s-header__navigation
+            each itemMenu in headerLeftMenu
+              li.s-header__navigation-item
+                a.s-header__navigation-link.font-menu(href=itemMenu.link, aria-label=itemMenu.title, title=itemMenu.title)
+                  span= itemMenu.title
+                if itemMenu.subMenu
+                  ul.s-header__submenu
+                    each item in itemMenu.subMenu
+                      li.s-header__submenu-item
+                        a.s-header__submenu-link.font-s.font-light(href=item.link)= item.title
 
       .s-header__logo
         img.s-header__logo-image(src="./img/global/logo.svg", alt="")
