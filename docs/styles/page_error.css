@@ -175,7 +175,17 @@
   padding-left: 1.75rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
+  .s-page-error__content {
+    margin-bottom: 3.75rem;
+  }
+
+  .s-page-error__content p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
   .font-h1 {
     font-size: 4.75rem;
     font-weight: 400;
@@ -235,23 +245,13 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .s-page-error__content {
-    margin-bottom: 3.75rem;
-  }
-
-  .s-page-error__content p {
-    margin-bottom: 1.5rem;
-  }
-}
-
 @media (max-width: 767px) {
   .s-page-error__button {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
   .font-h1 {
     font-size: 3rem;
     line-height: 3rem;

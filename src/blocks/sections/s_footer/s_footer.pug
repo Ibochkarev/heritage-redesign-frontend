@@ -45,6 +45,10 @@ footer.s-footer
     .s-footer__wrapper
       .s-footer__content
         .s-footer__column
+          .s-footer__logo
+            img(src="./img/global/logo.svg", alt="")
+          a.s-footer__phone.font-xl(href="+tel:88005551979") 8 (800) 555-19-79
+        .s-footer__column
           a.s-footer__title(href="") О школе
           ul.s-footer__menu
             each item in menuFooterAbout
@@ -78,10 +82,6 @@ footer.s-footer
               else
                 li.s-footer__menu-item
                   a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
-        .s-footer__column.s-footer__column--contacts
-          a.s-footer__phone.font-xl(href="+tel:88005551979") 8 (800) 555-19-79
-          .s-footer__logo
-            img(src="./img/global/logo.svg", alt="")
       .s-footer__bottom.font-s.font-light
         .s-footer__bottom-col © 2020-2023 Heritage International School
         .s-footer__bottom-col

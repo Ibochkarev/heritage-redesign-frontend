@@ -252,7 +252,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1600px) {
   .font-h1 {
     font-size: 4.75rem;
     font-weight: 400;
@@ -307,7 +307,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
   .font-h1 {
     font-size: 3rem;
     line-height: 3rem;

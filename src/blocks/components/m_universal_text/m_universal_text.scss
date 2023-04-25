@@ -69,6 +69,8 @@
 
     ul, ol {
       @include font-m;
+      margin-left: 0;
+      padding-left: rem(20);
     }
 
     b, strong {

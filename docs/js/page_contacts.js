@@ -86,26 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/blocks/sections/_contacts/s_page_contacts/s_page_contacts.js":
-/*!**************************************************************************!*\
-  !*** ./src/blocks/sections/_contacts/s_page_contacts/s_page_contacts.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("var toggleContactItem = document.querySelectorAll(\".s-page-contacts__item-toggle\");\nif (toggleContactItem) {\n  toggleContactItem.forEach(function (el) {\n    el.onclick = function () {\n      var initialText = 'развернуть';\n      if (el.textContent.toLowerCase().includes(initialText.toLowerCase())) {\n        el.textContent = 'свернуть';\n      } else {\n        el.textContent = initialText;\n      }\n      this.parentNode.parentNode.parentNode.classList.toggle(\"is-open\");\n    };\n  });\n}\n\n//# sourceURL=webpack:///./src/blocks/sections/_contacts/s_page_contacts/s_page_contacts.js?");
-
-/***/ }),
-
 /***/ "./src/js/page_contacts.js":
 /*!*********************************!*\
   !*** ./src/js/page_contacts.js ***!
   \*********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_contacts_s_page_contacts_s_page_contacts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_contacts/s_page_contacts/s_page_contacts */ \"./src/blocks/sections/_contacts/s_page_contacts/s_page_contacts.js\");\n/* harmony import */ var _sections_contacts_s_page_contacts_s_page_contacts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sections_contacts_s_page_contacts_s_page_contacts__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/js/page_contacts.js?");
+eval("// import '%sections%/_contacts/s_page_contacts/s_page_contacts'\n\n//# sourceURL=webpack:///./src/js/page_contacts.js?");
 
 /***/ })
 

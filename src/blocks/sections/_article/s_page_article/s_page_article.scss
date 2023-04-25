@@ -8,11 +8,15 @@
   }
 
   &__inner {
-    max-width: rem(800);
+    max-width: 96%;
     margin: 0 auto;
 
-    @media (min-width: 1200px){
-      max-width: rem(1180);
+    @media (min-width: 992px) {
+      max-width: 90%;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: rem(1140);
     }
   }
 
@@ -36,20 +40,24 @@
       height: auto;
     }
 
-    h2 {
-      @include font-h2;
+    h2, h3, h4, h5 {
+      font-weight: 500;
+      @include font-xl;
     }
 
-    h3 {
-      @include font-h3;
-    }
+    // h2 {
+    //   @include font-h2;
+    // }
 
-    h4 {
-      @include font-h4;
-    }
+    // h3 {
+    //   @include font-h3;
+    // }
+
+    // h4 {
+    //   @include font-h4;
+    // }
 
     h2, h3, h4, h5 {
-      text-transform: uppercase;
       color: var(--color-dark-blue);
     }
 
@@ -57,14 +65,46 @@
       color: var(--color-dark-gold);
     }
 
-    iframe {
-        @media (max-width: 768px) {
-            height: rem(280);
-        }
+    blockquote {
+      position: relative;
+      margin: rem(16) rem(46);
+      padding: rem(16) rem(24);
+      text-align: center;
+      @include font-m;
 
-        @media (max-width: 545px) {
-            height: rem(190);
-        }
+      &:before,
+      &:after {
+        position: absolute;
+        font-family: Times, sans-serif;
+        font-size: rem(100);
+        line-height: rem(100);
+        color: var(--color-dark-blue);
+      }
+
+      &:before {
+        top: rem(-10);
+        left: rem(-30);
+        content: '“';
+      }
+
+      &:after {
+        right: rem(-30);
+        bottom: rem(-10);
+        content: '”';
+      }
+    }
+
+    iframe {
+      width: 100%;
+      border: 0;
+
+      @media (max-width: 768px) {
+          height: rem(280);
+      }
+
+      @media (max-width: 545px) {
+          height: rem(190);
+      }
     }
 
     p, ul, ol, table, iframe, img, h2, h3, h4, h5 {
@@ -73,6 +113,11 @@
       @media (min-width: 1024px) {
         margin-bottom: rem(40);
       }
+    }
+
+    ul, ol {
+      margin-left: 0;
+      padding-left: rem(20);
     }
   }
 }
