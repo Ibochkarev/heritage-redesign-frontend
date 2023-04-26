@@ -3,10 +3,9 @@
 
   .m-section__wrapper {
     padding-top: 0;
-    @media screen and (min-width: 1440px) {
-      .m-section__wrapper {
-        padding: 0 0 rem(60);
-      }
+
+    @media screen and (min-width: 1024px) {
+        padding: 0 0 rem(40);
     }
   }
 

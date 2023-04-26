@@ -85,9 +85,9 @@
       position: fixed;
       top: rem(80);
       left: 0;
-      height: calc(100vh - 80px);
-      min-height: calc(100vh - 41px);
-      padding: rem(16);
+      height: calc(100vh - 100px);
+      // min-height: calc(100vh - 120px);
+      padding: rem(16) rem(16) rem(100);
       opacity: 0;
       transition: opacity 0.2s ease;
       overflow-y: auto;
@@ -210,8 +210,8 @@
     }
 
     &-image {
-      height: auto;
       width: rem(100);
+      height: auto;
 
       @media (min-width: 1190px) {
         width: rem(115);

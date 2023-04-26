@@ -12,6 +12,10 @@
     }
   }
 
+  .m-section__wrapper {
+    padding-bottom: 0 !important;
+  }
+
   &__social {
     margin: 0 auto rem(40);
     text-align: center;

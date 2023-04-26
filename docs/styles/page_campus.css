@@ -97,8 +97,8 @@
 }
 
 .font-l {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 .font-m {
@@ -217,6 +217,10 @@
 
 .s-vk-wall .m-section__title:hover {
   color: var(--color-dark-gold);
+}
+
+.s-vk-wall .m-section__wrapper {
+  padding-bottom: 0 !important;
 }
 
 .s-vk-wall__social {
