@@ -1,5 +1,4 @@
 .s-page-article {
-
   &__wrapper {
     display: flex;
     justify-content: center;
@@ -25,9 +24,34 @@
     color: var(--color-dark-blue);
   }
 
-  &__date {
+  &__headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: rem(24);
+    flex-wrap: wrap;
+    gap: rem(10);
+  }
+
+  &__date {
     color: var(--color-black);
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    color: var(--color-dark-gold);
+    gap: rem(2);
+    white-space: nowrap;
+
+    svg {
+      font-size: rem(12);
+      flex: none;
+
+      @media (min-width: 992px) {
+        font-size: rem(20);
+      }
+    }
   }
 
   &__content {
