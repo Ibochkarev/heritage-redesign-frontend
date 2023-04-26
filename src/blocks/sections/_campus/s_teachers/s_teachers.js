@@ -1,13 +1,15 @@
-import { Swiper, Navigation, Pagination, Mousewheel } from "swiper"
-Swiper.use([Pagination, Navigation, Mousewheel])
+import { Swiper, Navigation, Pagination, Mousewheel, Grid } from "swiper"
+Swiper.use([Pagination, Navigation, Mousewheel, Grid])
 
 const teamSlider = new Swiper(`.s-teachers__slider`, {
-  slidesPerView: 2,
-  slidesPerGroup: 2,
-  slidesPerColumn: 2,
+  slidesPerView: 'auto',
   spaceBetween: 0,
   resistance: true,
   resistanceRatio: 1,
+  grid: {
+    rows: 5,
+    fill: 'row',
+  },
   pagination: {
     el: `.s-teachers__pagination`,
     // dynamicBullets: true,
@@ -17,16 +19,13 @@ const teamSlider = new Swiper(`.s-teachers__slider`, {
     nextEl: `.s-teachers__button-next`,
     prevEl: `.s-teachers__button-prev`,
   },
-  slidesPerColumnFill: `row`,
+  observer: true,
+  observeParents: true,
   breakpoints: {
-    640: {
-      slidesPerView: 3,
-    },
-    1024: {
-      slidesPerView: 4,
-    },
-    1440: {
-      slidesPerView: 5,
+    600: {
+      grid: {
+        rows: 2,
+      },
     },
   },
 })
