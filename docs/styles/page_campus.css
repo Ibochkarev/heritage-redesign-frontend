@@ -686,6 +686,10 @@
   margin-bottom: 0.5rem;
 }
 
+.s-teachers .swiper-slide {
+  height: calc((100% - 24px) / 2) !important;
+}
+
 .s-teachers__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -782,6 +786,11 @@
   height: 0.25rem;
 }
 
+.s-teachers .swiper-slide {
+  max-width: 11.25rem;
+  height: calc((100% - 24px) / 5) !important;
+}
+
 .s-campus-contact__inner {
   display: -ms-grid;
   display: grid;
@@ -859,6 +868,11 @@
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     gap: 0 3.75rem;
+  }
+
+  .s-teachers .swiper-slide {
+    max-width: 20.25rem;
+    height: calc((100% - 24px) / 2) !important;
   }
 }
 

@@ -1,4 +1,8 @@
 .s-teachers {
+  .swiper-slide {
+    height: calc((100% - 24px) / 2) !important;
+  }
+
   &__card {
     display: flex;
     align-items: center;
@@ -101,6 +105,16 @@
     .swiper-pagination-bullet {
       width: rem(20);
       height: rem(4);
+    }
+  }
+
+  .swiper-slide {
+    max-width: rem(180);
+    height: calc((100% - 24px) / 5) !important;
+
+    @media (min-width: 600px) {
+      max-width: rem(324);
+      height: calc((100% - 24px) / 2) !important;
     }
   }
 }
