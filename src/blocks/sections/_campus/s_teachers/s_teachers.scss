@@ -113,8 +113,12 @@
     height: calc((100% - 24px) / 5) !important;
 
     @media (min-width: 600px) {
-      max-width: rem(324);
+      max-width: rem(287);
       height: calc((100% - 24px) / 2) !important;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: rem(324);
     }
   }
 }

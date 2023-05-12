@@ -840,7 +840,8 @@
   flex: none;
 }
 
-.s-campus-contact__item-icon svg {
+.s-campus-contact__item-icon svg,
+.s-campus-contact__item-icon img {
   width: 100%;
   height: auto;
 }
@@ -875,7 +876,7 @@
   }
 
   .s-teachers .swiper-slide {
-    max-width: 20.25rem;
+    max-width: 17.9375rem;
     height: calc((100% - 24px) / 2) !important;
   }
 }
@@ -1191,6 +1192,10 @@
 @media (min-width: 1920px) {
   .s-cost__card {
     gap: 5rem;
+  }
+
+  .s-teachers .swiper-slide {
+    max-width: 20.25rem;
   }
 
   .s-campus-contact__inner {

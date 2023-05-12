@@ -12,10 +12,6 @@
       flex-wrap: nowrap;
     }
 
-    @media (min-width: 1200px) {
-      min-height: rem(600);
-    }
-
     &--reverse {
       flex-direction: row-reverse;
 
